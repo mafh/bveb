@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-5.webp" type="image/webp">
+								<img src="userimg/title-5.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Частным клиентам</a></li>
+									<li><a href="#">Курсы валют банка</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<div class="b-aside">
+									//= partials/converter.html
+								</div>
+								<h1>Курсы валют банка</h1>
+
+								<div class="source-selector">
+									<p><label><input type="radio" name="credit-type"><span>Курсы НБ Республики Беларусь</span></label></p>
+									<p><label><input type="radio" name="credit-type" checked><span>ОАО «Банк БелВЭБ»</span></label></p>
+								</div>
+
+							</div>
+						</header>
+
+						<div class="usercontent">
+							<div class="maxwrap">
+
+								<div class="box-letter filter currency-fliter">
+
+									<!-- <div class="js-tabs">
+										<div class="tabs align-center">
+											<a href="#tab-1">Курсы НБ Республики Беларусь</a>
+											<a href="#tab-2">ОАО «Банк БелВЭБ»</a>
+										</div>
+									</div> -->
+
+									<div class="flex-row bottom-xs">
+										<div class="filter-col col-xs">
+											<span class="label-title">Офис</span>
+											<select data-select>
+												<option value="226" selected="selected">Центральный аппарат</option>
+												<option value="14000">Центр банковских услуг 1 (центральный аппарат)</option>
+												<option value="13002">Обменный пункт №12</option>
+												<option value="56051">Минское отделение 2</option>
+												<option value="81000">Расчетно-кассовый центр «Луч» </option>
+												<option value="56910">ЦРБ №560/1</option>
+												<option value="62000">Минское отделение 3</option>
+												<option value="94051">Расчетно-кассовый центр «Колядичи» (Бабушкина, 37)</option>
+												<option value="94052">Расчетно-кассовый центр «Колядичи» (Бабушкина, 39)</option>
+												<option value="85000">Расчетно-кассовый центр "Тростенец"</option>
+												<option value="57000">Минское отделение «Центральное»</option>
+												<option value="57930">Центр розничного бизнеса №570/1</option>
+												<option value="57920">Центр розничного бизнеса №570/2</option>
+												<option value="51000">Брестское региональное отделение</option>
+												<option value="51910">Центр розничного бизнеса №510/1</option>
+												<option value="93000">Расчетно-кассовый центр "Кобрин"</option>
+												<option value="71000">Отделение в г. Барановичи</option>
+												<option value="90000">Расчетно-кассовый центр «Солигорск»</option>
+												<option value="69000">Отделение в г. Пинске</option>
+												<option value="69910">Центр розничного бизнеса №690/1</option>
+												<option value="89000">Расчетно-кассовый центр "Припять"</option>
+												<option value="52000">Витебское региональное отделение</option>
+												<option value="86000">Расчетно-кассовый центр "Полоцк"</option>
+												<option value="52910">Центр розничного бизнеса №520/1</option>
+												<option value="96000">Расчетно-кассовый центр "Глубокое"</option>
+												<option value="97000">Расчетно-кассовый центр "Верхнедвинск"</option>
+												<option value="68000">Отделение в г. Орше</option>
+												<option value="53000">Гомельское региональное отделение</option>
+												<option value="87000">Расчетно-кассовый центр «Новобелицкий»</option>
+												<option value="98000">Расчетно-кассовый центр «Речица» </option>
+												<option value="60000">Отделение в г. Светлогорске</option>
+												<option value="92000">Расчетно-кассовый центр «Жлобин» </option>
+												<option value="66000">Отделение в г. Мозыре</option>
+												<option value="54000">Гродненское региональное отделение</option>
+												<option value="91000">Расчетно-кассовый центр "Островец"</option>
+												<option value="80000">Расчетно-кассовый центр "Волковыск"</option>
+												<option value="76000">Отделение в г. Лиде</option>
+												<option value="55000">Могилевское региональное отделение</option>
+												<option value="55920">Центр розничного бизнеса №550/2</option>
+												<option value="65000">Отделение в г. Бобруйске</option>
+												<option value="65910">Центр розничного бизнеса №650/1</option>
+												<option value="67000">Отделение в г. Молодечно</option>
+												<option value="67910">Центр розничного бизнеса №670/1</option>
+												<option value="58000">Отделение в г. Борисове</option>
+												<option value="95000">Расчетно-кассовый центр "Жодино"</option>
+											</select>
+										</div>
+										<div class="filter-col col-xs">
+
+											<div class="flatpickr">
+												<span class="label-title">Дата</span>
+												<div class="input input--decorated">
+
+													<input id="date" value="06.02.2018" name="date" type="text" placeholder="Выберите дату" data-minDate="03.01.2013" data-maxDate="24.02.2018" data-defaultDate="06.02.2018" data-input="">
+
+
+													<svg class="input-calendar" viewBox="0 0 512 512" data-toggle>
+														<use xlink:href="#ico-calendar"></use>
+													</svg>
+
+													<svg class="input-clear" viewBox="0 0 32 32" data-clear>
+														<use xlink:href="#ico-close"></use>
+													</svg>
+												</div>
+											</div>
+
+										</div>
+										<div class="filter-col col-xs">
+											<a href="#" class="button">Показать результаты</a>
+										</div>
+									</div>
+
+								</div>
+
+								<h2 class="align-center">Текущие курсы валют на дату: 24.10.2017</h2>
+
+								<h3 class="align-center">Наличный курс обмена валют</h3>
+
+								<table autowidth="true">
+									<tr>
+										<th>Операция</th>
+										<th>Валюта</th>
+										<th>ISO</th>
+										<th>Покупка</th>
+										<th>Продажа</th>
+									</tr>
+									<tr>
+										<td rowspan="2">Наличный курс обмена валют</td>
+										<td>10 КИТАЙСКИХ ЮАНЕЙ</td>
+										<td>CNY</td>
+										<td>2.8500</td>
+										<td>2.9500</td>
+									</tr>
+									<tr>
+										<td>100 РОССИЙСКИХ РУБЛЕЙ</td>
+										<td>RUR</td>
+										<td>3.3500</td>
+										<td>3.3500</td>
+									</tr>
+									<tr>
+										<td rowspan="2">Курсы конверсии</td>
+										<td>ДОЛЛАР США / РОССИЙСКИЙ РУБЛЬ</td>
+										<td>USD/RUR</td>
+										<td>60.0000</td>
+										<td>66.0000</td>
+									</tr>
+									<tr>
+										<td>ДОЛЛАР США / ЕВРО</td>
+										<td>USD/EUR</td>
+										<td>1.2800</td>
+										<td>1.3300</td>
+									</tr>
+								</table>
+
+								<h3 class="align-center">Курс покупки наличной иностранной валюты для безналичных расчетов</h3>
+
+								<table autowidth="true">
+									<tr>
+										<th>Валюта</th>
+										<th>ISO</th>
+										<th>Покупка</th>
+									</tr>
+									<tr>
+										<td>10 КИТАЙСКИХ ЮАНЕЙ</td>
+										<td>CNY</td>
+										<td>2.8500</td>
+									</tr>
+									<tr>
+										<td>100 РОССИЙСКИХ РУБЛЕЙ</td>
+										<td>RUR</td>
+										<td>3.3500</td>
+									</tr>
+									<tr>
+										<td>1 ДОЛЛАР</td>
+										<td>USD</td>
+										<td>1.99000</td>
+									</tr>
+									<tr>
+										<td>1 ЕВРО</td>
+										<td>EUR</td>
+										<td>2.23000</td>
+									</tr>
+								</table>
+
+								<div class="space"></div>
+
+								<div class="box-letter">
+									<h2>Центральный аппарат</h2>
+									<p><b>Адрес</b>: Минск, ул. Московская,13, 220007</p>
+									<b>Режим работы:</b> пн.-чт.: 9.00 – 18.30<br>
+									пт.: 9.00 – 17.30<br>
+									сб.: 9.00 – 17.00, <br>
+									вых.: вс., праздн. дни<br>
+									предпр.дни: рабочий день сокращается на 1 час.<br>
+								</div>
+
+								<div class="box-letter">
+									<p>Обращаем Ваше внимание, что в течение дня курсы валют могут изменяться. Курсы указаны для касс банка.</p>
+									<p>Покупка наличной иностранной валюты у физических лиц для безналичных расчетов (за товары и услуги) осуществляется без взимания комиссии</p>
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>

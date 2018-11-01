@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-3.webp" type="image/webp">
+								<img src="userimg/title-3.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">О банке</a></li>
+									<li><a href="#">Правление</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<div class="b-aside">
+									<div class="b-contacts">
+										<p>Контакт-центр</p>
+										<p>(с 8.00 до 20.00 в будние дни):</p>
+										<p>+375 (17) 215-61-15</p>
+										<p>205 – МТС, Life:), Velcom </p>
+										<p><a href="#">Онлайн консультант</a></p>
+									</div>
+								</div>
+								<h1>Обратная связь</h1>
+							</div>
+						</header>
+
+						<div class="maxwrap">
+
+							<section class="usercontent">
+								<div class="box-letter">
+									<h2 class="align-center">Форма электронного сообщения</h2>
+
+									<div class="js-tabs">
+										<div class="tabs align-center">
+											<a href="#tab-1">Для физического лица</a>
+											<a href="#tab-2">Для юридического лица</a>
+										</div>
+
+										<div id="tab-1" class="tab-content">
+
+											<form class="flex-row form-row">
+
+												<div class="col-xs-12 col-sm-6">
+													<div class="input">
+														<label>
+															<span>Фамилия *</span>
+															<input type="text" value="" name="fiz-sname">
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-6">
+													<div class="input">
+														<label>
+															<span>Имя *</span>
+															<input type="text" name="fiz-name">
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-6">
+													<div class="input">
+														<label>
+															<span>Отчество *</span>
+															<input type="text" name="fiz-mname">
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-6">
+													<div class="input">
+														<label>
+															<span>Телефон *</span>
+															<input type="text" name="fiz-phone">
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12">
+													<div class="input">
+														<label>
+															<span>Электронная почта *</span>
+															<input type="email" name="fiz-emai;">
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12">
+													<div class="input">
+														<label>
+															<span>Сообщение *</span>
+															<textarea name="fiz-message"></textarea>
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-sm-8">
+													<div class="input">
+														<label>
+															<span>Введите символы с картинки *</span>
+															<div class="flex-row middle-xs">
+																<div class="col-xs col-collapse">
+																	img
+																</div>
+																<div class="col-xs">
+																	<input type="text" name="fiz-phone">
+																</div>
+															</div>
+														</label>
+													</div>
+												</div>
+
+												<div class="col-xs-12 center-xs">
+													<input type="submit" value="Отправить" class="button">
+												</div>
+
+												<div class="col-xs-12">
+													<div class="form-tip">Поля, обозначенные символом «*», обязательны для заполнения</div>
+												</div>
+
+											</form>
+
+										</div>
+										<div id="tab-2" class="tab-content">
+											Для юридического лица
+										</div>
+									</div>
+								</div>
+
+								<div class="box-letter">
+
+									<ul>
+										<li>Электронные сообщения, размещенные в рубрике «Обратная связь» или направленные на официальный адрес электронной почты Банка, могут быть оставлены Банком без ответа;</li>
+										<li>Если Вы желаете, чтобы Ваш вопрос был рассмотрен по существу в порядке, установленном законодательными актами Республики Беларусь (в том числе Законом Республики Беларусь от 18 июля 2011 г. № 300-З «Об обращениях граждан и юридических лиц», законодательством об административных процедурах, гражданским законодательством и т.д.) для рассмотрения обращений граждан и юридических лиц, рекомендуем лично либо через своего представителя обратиться в Банк путем подачи письменного или устного обращения;</li>
+										<li>Не рекомендуем указывать в переписке полные номера банковских платежных карточек, срок действия карточки, коды защиты CVV2/CVC2, идентификационные данные (пароли и логины) систем дистанционного банковского обслуживания («Интернет-Банк», «Мобильный банк» и т.д.);</li>
+									</ul>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>

@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-4.webp" type="image/webp">
+								<img src="userimg/title-4.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Частным клиентам</a></li>
+									<li><a href="#">Кредитование</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<h1>Кредитование</h1>
+
+								<div class="b-content-title-text">
+									<div class="flex-row b-advantages">
+										<div class="col-xs-12 col-sm-6">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 26 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-check"></use></svg>
+												</i>
+												<span><span>Быстрое получение нужной суммы</span></span>
+											</span>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 26 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-check"></use></svg>
+												</i>
+												<span><span>Без поручителей</span></span>
+											</span>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 26 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-check"></use></svg>
+												</i>
+												<span><span>Удобство погашения кредита</span></span>
+											</span>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 26 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-check"></use></svg>
+												</i>
+												<span><span>Самостоятельный выбор даты</span></span>
+											</span>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 26 15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ico-check"></use></svg>
+												</i>
+												<span><span>Досрочное погашение</span></span>
+											</span>
+										</div>
+
+										<div class="col-xs-12 center-xs b-advantages-footer">
+											<a href="#" class="button">Подобрать кредит</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+						</header>
+
+						<div class="maxwrap">
+
+							<section>
+
+								<div class="flex-row config-ctrl">
+									<div class="col-xs-12 col-sm-6">
+										<div class="config-title">Мне необходим кредит на</div>
+										<p><label><input type="radio" name="credit-type" checked><span>Потребительские нужды</span></label></p>
+										<p><label><input type="radio" name="credit-type"><span>Рефинансирование кредита</span></label></p>
+										<p><label><input type="radio" name="credit-type"><span>Автомобиль</span></label></p>
+										<p><label><input type="radio" name="credit-type"><span>Кредитную карточку</span></label></p>
+										<p><label><input type="radio" name="credit-type"><span>Недвижимость</span></label></p>
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<div class="config-title">Я хочу получить кредит</div>
+										<p><label><input type="radio" name="credit-amount" checked><span>На сумму</span></label></p>
+										<p><label><input type="radio" name="credit-amount"><span>Исходя из моего дохода</span></label></p>
+									</div>
+									<div class="col-xs-12 col-sm-6">
+										<div class="config-title">На срок</div>
+										<select data-select name="" id="">
+											<option value="1">1 год</option>
+											<option value="2">2 года</option>
+											<option value="3">3 года</option>
+											<option value="4">4 года</option>
+											<option value="5">5 лет</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="confg-result">
+
+									<div class="config-result-header">
+										Найдено кредитов: 3
+									</div>
+
+									<div class="confg-result-list">
+
+										<div class="flex-row b-offer-list">
+											<div class="col-xs-12">
+												<a href="#" class="b-offer is-new">
+													<picture>
+														<source srcset="userimg/offer-1.webp" type="image/webp">
+														<img src="userimg/offer-1.jpg" alt="">
+													</picture>
+													<div class="b-offer-title">
+														Асаблівы
+													</div>
+													<div class="b-offer-details">
+														<ul>
+															<li>Без справки о доходах</li>
+															<li>Сумма кредита - до 3000 руб.</li>
+															<li>Срок кредитования – 1 и 2 года</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-xs-12">
+												<a href="#" class="b-offer is-new">
+													<picture>
+														<source srcset="userimg/offer-2.webp" type="image/webp">
+														<img src="userimg/offer-2.jpg" alt="">
+													</picture>
+													<div class="b-offer-title">
+														Асаблівы
+													</div>
+													<div class="b-offer-details">
+														<ul>
+															<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+															<li>Без поручителей</li>
+															<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-xs-12">
+												<a href="#" class="b-offer is-hit">
+													<picture>
+														<source srcset="userimg/offer-3.webp" type="image/webp">
+														<img src="userimg/offer-3.jpg" alt="">
+													</picture>
+													<div class="b-offer-title">
+														Спрынтар
+													</div>
+													<div class="b-offer-details">
+														<ul>
+															<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+															<li>Без поручителей</li>
+															<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-xs-12">
+												<a href="#" class="b-offer">
+													<picture>
+														<source srcset="userimg/offer-4.webp" type="image/webp">
+														<img src="userimg/offer-4.jpg" alt="">
+													</picture>
+													<div class="b-offer-title">
+														Дабрабыт
+													</div>
+													<div class="b-offer-details">
+														<ul>
+															<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+															<li>Без поручителей</li>
+															<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+											<div class="col-xs-12">
+												<a href="#" class="b-offer">
+													<picture>
+														<source srcset="userimg/offer-5.webp" type="image/webp">
+														<img src="userimg/offer-5.jpg" alt="">
+													</picture>
+													<div class="b-offer-title">
+														Узаемная выгада
+													</div>
+													<div class="b-offer-details">
+														<ul>
+															<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+															<li>Без поручителей</li>
+															<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+														</ul>
+													</div>
+												</a>
+											</div>
+										</div>
+
+
+
+									</div>
+
+								</div>
+
+							</section>
+
+							<section class="usercontent">
+								<div class="box-letter">
+
+									<div class="js-tabs">
+										<div class="tabs align-center">
+											<a href="#tab-1">Полезно знать</a>
+											<a href="#tab-2">Документы</a>
+											<a href="#tab-3">ЕРИП расчет</a>
+										</div>
+
+										<div id="tab-1" class="tab-content">
+											<h2 class="align-center">Кредиты ОАО «Банк БелВЭБ» Вы можете погасить с использованием системы «Расчет» *</h2>
+
+											<ul>
+												<li>Воспользоваться услугой «Погашение кредита» в системе «Расчет» Вы можете с использованием каналов дистанционного банковского самообслуживания любого банка (кроме ОАО «Банк БелВЭБ» и банков-партнеров). Для этого Вам необходимо в каталоге системы «Расчет» в разделе «Финансовые услуги» / «Банки» выбрать «Банк БелВЭБ» и активировать услугу «Погашение кредита». Далее Вам будет предложено ввести номер счета по учету кредита в формате счета IBAN: BYХХ BELB 24XX XXXX XXXX X022 6000 Номер счета по учету кредита Вы можете уточнить, обратившись в отделение ОАО «Банк БелВЭБ» по месту оформления кредита. С помощью системы «Расчет» Вы можете совершить только текущий платеж по кредиту. Если Вы хотите погасить кредит досрочно или оплачивать кредит большей суммой, чем указано в графике - пожалуйста, обратитесь к экономисту в отделение банка.</li>
+												<li>«Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру. «Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру.</li>
+											</ul>
+
+											<p class="tip">Платежи, произведенные через систему «Расчет» поступают в ОАО «Банк БелВЭБ» на следующий рабочий день, после их совершения.</p>
+										</div>
+										<div id="tab-2" class="tab-content">
+											<h2 class="align-center">Документы</h2>
+											<p>«Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру. «Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру.</p>
+										</div>
+										<div id="tab-3" class="tab-content">
+											<h2 class="align-center">ЕРИП расчет</h2>
+											<p>«Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру. «Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру.</p>
+										</div>
+									</div>
+
+								</div>
+							</section>
+
+						</div>
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>

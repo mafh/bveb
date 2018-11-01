@@ -1,0 +1,42 @@
+@mixin clr {
+	&:after {
+		content:"";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin cover {
+	width:  100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+	font-family: 'object-fit: cover; object-position: 50% 50%;';
+}
+
+@mixin contain {
+	width:  100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%;
+	font-family: 'object-fit: contain; object-position: 50% 50%;';
+}
+
+
+$easing: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+$blue: #006e93;
+$lightblue: #198ed1;
+$orange: #f6743a;
+$red: #d62121;
+$grey: #f3f3f3;
+$darkgrey: #ddd;
+$whiten: #fff;
+$roboto: 'Roboto', serif, sans-serif;
+$myriad: 'Myriad', 'Roboto', serif, sans-serif;

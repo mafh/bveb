@@ -1,30 +1,14 @@
 <div class="header-row">
 
-	<div class="mobile-header">
-
-		<div class="menu-button js-menu-open">
-			<div class="ico-menu">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</div>
-		</div>
-
-		<a href="#" class="mobile-logo">
-			<img src="i/logo.png" alt="">
-		</a>
-
-	</div>
-
 	<header class="l-header flex-row">
 
 		<div class="header-aside">
 
 			<a href="#" class="logo">
-				<img src="i/logo.png" alt="">
+				<object data="./i/logo.svg" type="image/svg+xml"></object>
 			</a>
 
-			<a href="#" class="nav-toggle">
+			<a href="#" class="nav-toggle js-nav-toggle">
 				<span>Все услуги</span>
 				<span class="nav-toggle-ctrl c-ico ico-30">
 					<svg class="ico-arrow ico-down" viewBox="0 0 50 50">
@@ -39,48 +23,148 @@
 
 			<div class="header-content">
 
-				<div class="h-topline maxwrap">
-					<div class="topline-nav">
-						<ul class="topline-menu">
-							<li><a href="#" class="t-arrow"><span>Офисы и Банкоматы</span></a></li>
-							<li><a href="#" class="t-arrow"><span>Конвертер валют</span></a></li>
-							<li><a href="#" class="t-arrow"><span>Контакт-центр</span></a></li>
-						</ul>
-					</div>
-					<div class="topline-aside">
-						<div class="topline-iblogin">
-							<a href="#" class="link-iblogin">
-								<svg class="ico-lock" viewBox="0 0 32 32">
-									<use xlink:href="#ico-lock"></use>
-								</svg>
-								<span>Интернет-банк</span>
-							</a>
+				<div class="h-topline">
+					<div class="maxwrap">
+
+						<a href="#" class="topline-logo">
+							<img src="i/logo-small.png" alt="">
+						</a>
+
+						<div class="topline-nav">
+							<ul class="topline-menu">
+								<li class="t-arrow">
+									<a href="#"><span>Конвертер валют</span></a>
+									<div class="topline-sub">
+
+
+										<div class="converter js-converter">
+											<div class="converter-header">
+												Конвертер валют
+											</div>
+											<div class="converter-date">
+												Курс валют на 11.01.2017
+											</div>
+
+											<div class="converter-row">
+												<div class="coverter-select">
+													<select data-select-from>
+														<option value="usd" selected>USD</option>
+														<option value="eur">EUR</option>
+														<option value="byn">BYN</option>
+													</select>
+												</div>
+												<div class="coverter-input">
+													<div class="input">
+														<input type="text" class="js-input js-input-from"/>
+														<svg class="input-clear ico-close" viewBox="0 0 32 32">
+															<use xlink:href="#ico-close"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+
+											<div class="converter-row">
+												<div class="coverter-select">
+													<select data-select-to>
+														<option value="usd">USD</option>
+														<option value="eur" selected>EUR</option>
+														<option value="byn">BYN</option>
+													</select>
+												</div>
+												<div class="coverter-input">
+													<div class="input">
+														<input type="text" class="js-input js-input-to"/>
+														<svg class="input-clear ico-close" viewBox="0 0 32 32">
+															<use xlink:href="#ico-close"></use>
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</li>
+								<li class="t-arrow">
+									<a href="#"><span>Контакт-центр</span></a>
+									<div class="topline-sub">
+										<p>
+											<b>+375 (17) 215-61-15</b>
+											<br>
+											Контакт-центр
+										</p>
+										<p>
+											<b>205</b>
+											<br>
+											для абонентов МТС, Life:), Velcom Круглосуточно
+										</p>
+										<p>
+											<b>+375 (17) 215-61-15</b>
+											<br>
+											Круглосуточная поддержка держателей платежных карточек банка
+										</p>
+										<p>
+											<b>+375 (17) 215-61-15</b>
+											<br>
+											Линия доверия
+										</p>
+									</div>
+								</li>
+								<li>
+									<a href="#" class="toplink-schedule">
+										<i>
+											<svg>
+												<use xlink:href="./i/common.svg#schedule"></use>
+											</svg>
+										</i>
+										<span>Запись на обслуживание</span>
+									</a>
+								</li>
+							</ul>
 						</div>
-						<div class="topline-search">
-							<a href="#">
-								<svg class="ico-search" viewBox="0 0 50 50">
-									<use xlink:href="#ico-search"></use>
-								</svg>
-							</a>
-						</div>
-						<div class="topline-lang">
-							<a href="#">Eng</a>
+						<div class="topline-aside">
+							<div class="topline-iblogin">
+								<a href="#" class="link-iblogin">
+									<svg class="ico-lock" viewBox="0 0 32 32">
+										<use xlink:href="#ico-lock"></use>
+									</svg>
+									<span>Интернет-банк</span>
+								</a>
+							</div>
+							<div class="topline-search">
+								<a href="#">
+									<svg class="ico-search" viewBox="0 0 50 50">
+										<use xlink:href="#ico-search"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="topline-gain">
+								<a href="#" class="js-gain-toggle">
+									<svg class="ico-gain" viewBox="0 0 278 212">
+										<use xlink:href="#ico-gain"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="topline-lang">
+								<a href="#">Eng</a>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="h-currency">
-
 					<div class="maxwrap">
 						<div class="currency-title">
 							<a href="#" class="link--white">Курсы валют</a>
 							на 24.07.2017
 						</div>
 
-						<div class="currency-toggle">
+						<div class="currency-toggle js-currency-toggle">
 							<div class="c-ico ico-30">
-								<svg class="ico-arrow ico-down" viewBox="0 0 50 50">
+								<svg class="ico-arrow" viewBox="0 0 50 50">
 									<use xlink:href="#ico-down"></use>
+								</svg>
+								<svg class="ico-close" viewBox="0 0 32 32">
+									<use xlink:href="#ico-close"></use>
 								</svg>
 							</div>
 						</div>
@@ -101,15 +185,353 @@
 						</div>
 					</div>
 
+					<div class="currency-full" id="currency-full">
+						<div class="maxwrap">
+							<div class="flex-row">
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Курсы валют на 21.11.2017 по центральному аппарату</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>Покупка</th>
+												<th>Продажа</th>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#usd"></use>
+													</svg>
+													<span>1 USD</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#eur"></use>
+													</svg>
+													<span>1 EUR</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#rub"></use>
+													</svg>
+													<span>10 RUB</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#gbp"></use>
+													</svg>
+													<span>1 GBP</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#cny"></use>
+													</svg>
+													<span>10 CNY</span>
+												</td>
+												<td>2.9550</td>
+												<td>3.0050</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+										<a href="#"><span>Конвертер валют</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Курсы валют по карточкам<br>на 25.01.2017 с 16:00</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>Покупка</th>
+												<th>Продажа</th>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#usd"></use>
+													</svg>
+													<span>1 USD</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#eur"></use>
+													</svg>
+													<span>1 EUR</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#eur_usd"></use>
+													</svg>
+													<span>EUR/USD</span>
+												</td>
+												<td>1.4</td>
+												<td>0.8</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Курсы валют в интернет-банке<br>на 25.01.2017 с 16:00</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>Покупка</th>
+												<th>Продажа</th>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#usd"></use>
+													</svg>
+													<span>1 USD</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#eur"></use>
+													</svg>
+													<span>1 EUR</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#rub"></use>
+													</svg>
+													<span>10 RUB</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#gbp"></use>
+													</svg>
+													<span>1 GBP</span>
+												</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#cny"></use>
+													</svg>
+													<span>10 CNY</span>
+												</td>
+												<td>2.9550</td>
+												<td>3.0050</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+										<a href="#"><span>Конвертер валют</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Курсы конверсии банка<br> по центральному аппарату</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>Покупка</th>
+												<th>Продажа</th>
+											</tr>
+											<tr>
+												<td>EUR/USD</td>
+												<td>1.9550</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>EUR/RUB</td>
+												<td>70.0000</td>
+												<td>80.0000</td>
+											</tr>
+											<tr>
+												<td>USD/RUB</td>
+												<td>60.000</td>
+												<td>69.000</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Курсы НБ Республики Беларусь<br>на 25.01.2017</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>&nbsp;</th>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#usd"></use>
+													</svg>
+													<span>1 USD</span>
+												</td>
+												<td>1.9650</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#eur"></use>
+													</svg>
+													<span>1 EUR</span>
+												</td>
+												<td>2.2450</td>
+											</tr>
+											<tr>
+												<td>
+													<svg>
+														<use xlink:href="i/flags.svg#rub"></use>
+													</svg>
+													<span>10 RUB</span>
+												</td>
+												<td>3.3400</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Цены на драгоценные металлы в виде мерных слитков по центральному аппарату<br>на 25.01.2017</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>Покупка</th>
+												<th>Продажа</th>
+											</tr>
+											<tr>
+												<td>Золото 1 г.</td>
+												<td>82.00</td>
+												<td>102.00</td>
+											</tr>
+											<tr>
+												<td>Серебро</td>
+												<td>—</td>
+												<td>27.00</td>
+											</tr>
+											<tr>
+												<td>Платина 1 г.</td>
+												<td>—</td>
+												<td>90.00</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+									</footer>
+								</section>
+
+								<section class="col-xs-6">
+									<header class="cf-header">
+										<div class="cf-title">Цены на драгоценные металлы в виде банковских слитков<br>на 25.01.2017 с 16:00</div>
+									</header>
+									<div class="cf-data">
+										<table class="cf-rates">
+											<tr>
+												<th>Валюта</th>
+												<th>&nbsp;</th>
+												<th>
+													Покупка
+												</th>
+												<th>
+													Продажа
+												</th>
+											</tr>
+											<tr>
+												<td>Золото 1 г.</td>
+												<td><small>BYN</small></td>
+												<td>81,16</td>
+												<td>83,80</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+												<td><small>USD</small></td>
+												<td>40.68</td>
+												<td>41,59</td>
+											</tr>
+										</table>
+									</div>
+									<footer class="cf-footer">
+										<a href="#"><span>Все курсы</span></a>
+									</footer>
+								</section>
+							</div>
+						</div>
+					</div>
+
 				</div>
 
-				<div class="h-topmenu-wrap" 1style="display: none !important;">
+				<div class="h-topmenu-wrap">
 					<ul class="h-topmenu" id="topmenu">
-						<li><a href="./" class="topmenu-link">Частным клиентам</a></li>
+						<li><a href="./" class="topmenu-link topmenu-link--active">Частным клиентам</a></li>
 						<li><a href="./index-legal.html" class="topmenu-link">Малому бизнесу</a></li>
 						<li><a href="./index-legal.html" class="topmenu-link">Среднему и крупному бизнесу</a></li>
 						<li><a href="#" class="topmenu-link">Финансовым институтам</a></li>
-						<li><a href="#" class="topmenu-link">Интеграционный бизнес</a></li>
+						<li><a href="#" class="topmenu-link">Офисы и Банкоматы</a></li>
 						<li><a href="#" class="topmenu-link">О банке</a></li>
 					</ul>
 
@@ -122,8 +544,9 @@
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="no-flex-row js-isotoper">
+										<div class="section-sizer"></div>
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Кредитование</a></header>
 											<ul>
@@ -134,9 +557,9 @@
 												<li><a href="#">Финансирование недвижимости</a></li>
 											</ul>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Вклады и счета</a></header>
 											<ul>
@@ -147,15 +570,15 @@
 												<li><a href="#">Финансирование недвижимости</a></li>
 											</ul>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Банковские платежные карточки</a></header>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Онлайн-продукты</a></header>
 											<ul>
@@ -166,9 +589,9 @@
 												<li><a href="#">Финансирование недвижимости</a></li>
 											</ul>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Услуги</a></header>
 											<ul>
@@ -179,15 +602,15 @@
 												<li><a href="#">Финансирование недвижимости</a></li>
 											</ul>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">VIP-обслуживание персональное обслуживание</a></header>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section>
 											<header><a href="#">Справочная</a></header>
 											<ul>
@@ -198,15 +621,15 @@
 												<li><a href="#">Финансирование недвижимости</a></li>
 											</ul>
 										</section>
-									</div>
+									<!-- </div> -->
 
-									<div class="col-xs-12 col-sm-6 col-md-4">
+									<!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
 										<section class="sitemap-banner">
 											<picture>
 												<img srcset="userimg/promo-2.jpg" alt="">
 											</picture>
 										</section>
-									</div>
+									<!-- </div> -->
 								</div>
 							</div>
 						</div>
@@ -218,17 +641,36 @@
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
-										<section>
-											<header><a href="#">Кредитование</a></header>
-											<ul>
-												<li><a href="#">Овердрафт</a></li>
-												<li><a href="#">Рефинансирование</a></li>
-												<li><a href="#">Финансирование недвижимости</a></li>
-											</ul>
-										</section>
-									</div>
+								<div class="no-flex-row js-isotoper">
+									<div class="section-sizer"></div>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+									</section>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Овердрафт</a></li>
+											<li><a href="#">Рефинансирование</a></li>
+											<li><a href="#">Финансирование недвижимости</a></li>
+										</ul>
+									</section>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Овердрафт</a></li>
+											<li><a href="#">Рефинансирование</a></li>
+											<li><a href="#">Финансирование недвижимости</a></li>
+										</ul>
+									</section>
+
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Овердрафт</a></li>
+											<li><a href="#">Рефинансирование</a></li>
+											<li><a href="#">Финансирование недвижимости</a></li>
+										</ul>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -240,16 +682,22 @@
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
-										<section>
-											<header><a href="#">Кредитование</a></header>
-											<ul>
-												<li><a href="#">Кредитные карточки</a></li>
-												<li><a href="#">Финансирование недвижимости</a></li>
-											</ul>
-										</section>
-									</div>
+								<div class="no-flex-row js-isotoper">
+									<div class="section-sizer"></div>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Кредитные карточки</a></li>
+											<li><a href="#">Финансирование недвижимости</a></li>
+										</ul>
+									</section>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Кредитные карточки</a></li>
+											<li><a href="#">Финансирование недвижимости</a></li>
+										</ul>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -261,16 +709,15 @@
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
-										<section>
-											<header><a href="#">Кредитование</a></header>
-											<ul>
-												<li><a href="#">Потребительские кредиты</a></li>
-												<li><a href="#">Овердрафт</a></li>
-											</ul>
-										</section>
-									</div>
+								<div class="no-flex-row js-isotoper">
+									<div class="section-sizer"></div>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Потребительские кредиты</a></li>
+											<li><a href="#">Овердрафт</a></li>
+										</ul>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -278,20 +725,19 @@
 						<div class="sitemap-tab">
 							<div class="sitemap-header">
 								<div class="sitemap-note">
-									Интеграфионный бизнес
+									Офисы и Банкоматы
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
-										<section>
-											<header><a href="#">Кредитование</a></header>
-											<ul>
-												<li><a href="#">Потребительские кредиты</a></li>
-												<li><a href="#">Овердрафт</a></li>
-											</ul>
-										</section>
-									</div>
+								<div class="no-flex-row js-isotoper">
+									<div class="section-sizer"></div>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Потребительские кредиты</a></li>
+											<li><a href="#">Овердрафт</a></li>
+										</ul>
+									</section>
 								</div>
 							</div>
 						</div>
@@ -303,28 +749,215 @@
 								</div>
 							</div>
 							<div class="sitemap-main">
-								<div class="flex-row">
-									<div class="col-xs-12 col-sm-6 col-md-4">
-										<section>
-											<header><a href="#">Кредитование</a></header>
-											<ul>
-												<li><a href="#">Потребительские кредиты</a></li>
-												<li><a href="#">Овердрафт</a></li>
-											</ul>
-										</section>
-									</div>
+								<div class="no-flex-row js-isotoper">
+									<div class="section-sizer"></div>
+									<section>
+										<header><a href="#">Кредитование</a></header>
+										<ul>
+											<li><a href="#">Потребительские кредиты</a></li>
+											<li><a href="#">Овердрафт</a></li>
+										</ul>
+									</section>
 								</div>
 							</div>
 						</div>
 
 					</div>
-
 				</div>
 
 			</div>
 
 		</div>
-
 	</header>
+
+	<div class="mobile-header">
+		<div class="mobile-header-in">
+			<div class="menu-button js-menu-toggle">
+				<div class="ico-menu">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+			</div>
+
+			<a href="#" class="mobile-logo">
+				<img src="i/logo.png" alt="">
+			</a>
+		</div>
+	</div>
+
+	<div class="mobmenu js-mobmenu">
+
+		<div class="mm-menu">
+
+			<div class="mm-switch">
+				<select mm-data-select>
+					<option value="#mm-group-1">Частным лицам</option>
+					<option value="#mm-group-2">Малому бизнесу</option>
+					<option value="#mm-group-3">Среднему и крупному бизнесу</option>
+					<option value="#mm-group-4">Финансовым институтам</option>
+					<option value="#mm-group-5">Офисы и банкоматы</option>
+					<option value="#mm-group-6">О банке</option>
+				</select>
+			</div>
+
+			<ul id="mm-group-1">
+				<li><a href="/individual/">Главная</a></li>
+				<li class="mm-item">
+					<a href="/individual/kredity/">Кредиты</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/individual/kredity/potrebitelskie-nuzhdy/">Потребительские нужды</a></li>
+						<li><a href="/individual/kredity/kreditnye-kartochki/">Кредитные карточки</a></li>
+						<li><a href="/individual/kredity/overdraftnoe-kreditovanie/">Овердрафтное кредитование</a></li>
+						<li><a href="/individual/kredity/refinansirovanie-kreditov/" class="is-active">Рефинансирование кредитов</a></li>
+						<li><a href="/individual/kredity/avtokreditovanie/">Автокредитование</a></li>
+						<li><a href="/individual/kredity/finansirovanie-nedvizhimosti/">Финансирование недвижимости</a></li>
+						<li><a href="/individual/kredity/poleznaya-informatsiya/">Полезная информация</a></li>
+					</ul>
+				</li>
+				<li class="mm-item">
+					<a href="/individual/depozity-i-scheta/">Депозиты и счета</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/individual/depozity-i-scheta/depozity-online/">Депозиты ONLINE</a></li>
+						<li><a href="/individual/depozity-i-scheta/depozity-otkryvaemye-v-ofisakh-banka/">Депозиты, открываемые в офисах банка</a></li>
+						<li><a href="/individual/depozity-i-scheta/scheta/">Счета</a></li>
+						<li><a href="/individual/depozity-i-scheta/tekushchiy-schet-pensionnyy/">Текущий счет «Пенсионный»</a></li>
+					</ul>
+				</li>
+				<li class="mm-item">
+					<a href="/individual/internet-bank/">Интернет-Банк</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/individual/internet-bank/mobilnaya-versiya/">Мобильная версия</a></li>
+						<li><a href="/individual/internet-bank/mobilnyy-bank-dlya-wap-protokola-ne-podklyuchaetsya-s-01-01-2018/">Мобильный банк (для WAP-протокола) - не подключается с 01.01.2018</a></li>
+						<li><a href="/individual/internet-bank/registratsiya-msi/">Регистрация МСИ</a></li>
+					</ul>
+				</li>
+				<li class="mm-item"><a href="/individual/kartochki/">Платежные карточки</a></li>
+				<li class="mm-item"><a href="/individual/perevody-i-platezhi/">Переводы и платежи</a></li>
+				<li class="mm-item">
+					<a href="/individual/uslugi-i-obsluzhivanie/">Услуги и обслуживание</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/valyutno-obmennye-operatsii/">Валютно-обменные операции</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/dragotsennye-metally/">Драгоценные металлы</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/pamyatnye-monety-i-pamyatnye-banknoty/">Памятные монеты и памятные банкноты</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/operatsii-s-tsennymi-bumagami/">Операции с ценными бумагами</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/bankovskoe-khranenie/">Банковское хранение</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/personalnoe-obsluzhivanie/">Персональное обслуживание</a></li>
+						<li><a href="/individual/uslugi-i-obsluzhivanie/strakhovanie/">Страхование</a></li>
+					</ul>
+				</li>
+				<li class="mm-item"><a href="/individual/vip-obsluzhivanie/">VIP-обслуживание</a></li>
+				<li class="mm-item"><a href="/individual/spetsialnye-predlozheniya-i-aktsii/">Специальные предложения и акции</a></li>
+				<li class="mm-item">
+					<a href="/individual/poleznaya-informatsiya/">Полезная информация</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/individual/poleznaya-informatsiya/perekhod-na-iban-2017/">Переход на IBAN 2017</a></li>
+						<li><a href="/individual/poleznaya-informatsiya/dokumenty-i-tarify/">Документы и тарифы</a></li>
+						<li><a href="/individual/poleznaya-informatsiya/vremya-nachala-i-okonchaniya-bankovskogo-dnya/">Время начала и окончания банковского дня</a></li>
+						<li><a href="/individual/poleznaya-informatsiya/ofisy-operatsii-v-subbotu/">Офисы, операции в субботу</a></li>
+						<li><a href="/individual/poleznaya-informatsiya/finansovaya-gramotnost/">Финансовая грамотность</a></li>
+						<li><a href="/individual/poleznaya-informatsiya/polezno-znat/">Полезно знать</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul id="mm-group-2">
+				<li><a href="/smallbusiness-credit/">Главная</a></li>
+				<li><a href="/smallbusiness-credit/otkryt-schyet/">Открыть счёт</a></li>
+				<li>
+					<a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/">Ежедневное обслуживание</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/osushchestvlenie-raschetov/">Осуществление расчетов</a></li>
+						<li><a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/pakety-uslug/pakety-uslug-biznes/">Пакеты услуг "Бизнес"</a></li>
+						<li><a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/distantsionnoe-bankovskoe-obsluzhivanie/">Дистанционное банковское обслуживание</a></li>
+						<li><a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/vse-dlya-raboty-s-nalichnymi/">Все для работы с наличными</a></li>
+						<li><a href="/smallbusiness-credit/ezhednevnoe-obsluzhivanie/bankovskie-karty/">Банковские карты</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/">Размещение денежных средств</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/depozity/">Депозиты</a></li>
+						<li><a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/depozitnye-sertifikaty/">Депозитные сертификаты</a></li>
+						<li><a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/obligatsii-oao-bank-belbeb/">Облигации ОАО "Банк БелБЭБ"</a></li>
+						<li><a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/gosudarstvennye-tsennye-bumagi/">Государственные ценные бумаги</a></li>
+						<li><a href="/smallbusiness-credit/razmeshchenie-denezhnykh-sredstv/priobretenie-obligatsiy-iz-portfelya-banka/">Приобретение облигаций из портфеля банка</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="/smallbusiness-credit/finansirovanie/">Финансирование</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/smallbusiness-credit/finansirovanie/kreditovanie-v-tekushchuyu-deyatelnost/">Кредитование в текущую деятельность</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/kredity-na-ivestitsii/">Кредиты на инвестиции</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/ekspress-finansirovanie/">Экспресс-финансирование</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/refinansirovanie/">Рефинансирование</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/finansirovanie-po-programme-banka-razvitiya/">Финансирование по программе Банка развития</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/bankovskie-garantii/">Банковские гарантии</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/finansirovanie-v-kitayskikh-yuanyakh/">Финансирование в китайских юанях</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/lizing/">Лизинг</a></li>
+						<li><a href="/smallbusiness-credit/finansirovanie/faktoring/">Факторинг</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="/smallbusiness-credit/valyutno-obmennye-operatsii/">Валютно-обменные операции</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/smallbusiness-credit/valyutno-obmennye-operatsii/operatsii-na-belorusskoy-valyutno-fondovoy-birzhe/">Операции на Белорусской валютно-фондовой бирже</a></li>
+						<li><a href="/smallbusiness-credit/valyutno-obmennye-operatsii/operatsii-na-vnebirzhevom-valyutnom-rynke-respubliki-belarus/">Операции на внебиржевом валютном рынке Республики Беларусь</a></li>
+						<li><a href="/smallbusiness-credit/valyutno-obmennye-operatsii/operatsii-na-vnebirzhevom-srochnom-rynke/">Операции на внебиржевом срочном рынке</a></li>
+					</ul>
+				</li>
+				<li><a href="/smallbusiness-credit/zarplatnyi-proekt/">Зарплатный проект</a></li>
+				<li>
+					<a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/">Прочие операции и услуги для бизнеса</a>
+					<div class="mm-toggle"><svg class="ico-plus" viewBox="0 0 32 32"><use xlink:href="#ico-down"></use></svg></div>
+					<ul>
+						<li><a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/operatsii-s-tsennymi-bumagami/">Операции с ценными бумагами</a></li>
+						<li><a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/dragotsennye-metally-i-pamyatnye-monety/">Драгоценные металлы и памятные монеты</a></li>
+						<li><a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/bankovskoe-khranenie/">Банковское хранение</a></li>
+						<li><a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/strakhovanie/">Страхование</a></li>
+						<li><a href="/smallbusiness-credit/prochie-operatsii-i-uslugi-dlya-biznesa/finansovaya-ekspertiza-biznesa/">Финансовая экспертиза бизнеса</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul id="mm-group-3">
+				<li><a href="#">Главная 3</a></li>
+			</ul>
+			<ul id="mm-group-4">
+				<li><a href="#">Главная 4</a></li>
+			</ul>
+			<ul id="mm-group-5">
+				<li><a href="#">Главная 5</a></li>
+			</ul>
+			<ul id="mm-group-6">
+				<li><a href="#">Главная 6</a></li>
+			</ul>
+		</div>
+
+		<div class="mm-menu mm-extra">
+			<ul>
+				<li>
+					<a href="#">Конвертер валют</a>
+				</li>
+				<li>
+					<a href="#">Контакт-центр</a>
+				</li>
+				<li>
+					<a href="#">Интернет-банк</a>
+				</li>
+			</ul>
+		</div>
+
+		<a href="#" class="mob-rates"><span>Курсы валют</span> на 01.04.2018</a>
+	</div>
 
 </div>

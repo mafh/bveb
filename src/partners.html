@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-7.webp" type="image/webp">
+								<img src="userimg/title-7.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Частным клиентам</a></li>
+									<li><a href="#">Партнеры карты «Дива»</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<h1>Партнеры карты «Дива»</h1>
+								<div class="b-content-title-text">
+								</div>
+							</div>
+						</header>
+
+						<div class="maxwrap">
+							<section class="config" id="form-get-card">
+								<h2 class="align-center">Наши партнеры</h2>
+
+								<form action="" class="config-ctrl" id="partners-filter-wrap">
+
+									<div class="flex-row flex-row-padding-half">
+										<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+											<div class="config-title">Область</div>
+											<select data-select-region name="region">
+												<option selected placeholder>Выберите</option>
+												<option value="Минская">Минская</option>
+												<option value="Витебская">Витебская</option>
+											</select>
+										</div>
+										<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+											<div class="config-title">Город</div>
+											<select data-select-city name="city">
+												<option placeholder>Выберите</option>
+												<option value="Минск">Минск</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+												<option value="Молодечно">Молодечно</option>
+											</select>
+										</div>
+
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+											<div class="config-title">Поиск по названию</div>
+											<div class="suggest-wrap">
+												<input type="search" name="" id="partners-suggest-input" disabled placeholder="Наименование ИП, ЧУП, ЧОП, ООО, ОАО, ЗАО">
+												<ul class="suggest-result" id="partners-suggest-result" style="display: none;">
+													<li><a href="#">Рога</a></li>
+													<li><a href="#">Копыта</a></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="col-xs-12 col-sm-12 col-lg-3 end-xs col-config-reset">
+											<input type="reset" id="partners-filter-reset" class="button button-dashed" value="Сбросить фильтр"/>
+										</div>
+									</div>
+
+								</form>
+							</section>
+
+							<section class="usercontent">
+								<h2 class="align-center">Выберите категорию</h2>
+
+								<div class="flex-row b-categs-list">
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/800/601" alt="">
+											</picture>
+											<div class="b-categ-title">Автовладельцам</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ is-selected">
+											<picture>
+												<img src="https://picsum.photos/800/600" alt="">
+											</picture>
+											<div class="b-categ-title">Аксессуары</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/400/400" alt="">
+											</picture>
+											<div class="b-categ-title">Косметика и парфюмерия</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/400/401" alt="">
+											</picture>
+											<div class="b-categ-title">Мебель и интерьер</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/400/401" alt="">
+											</picture>
+											<div class="b-categ-title">Здоровье</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/400/401" alt="">
+											</picture>
+											<div class="b-categ-title">Одежда</div>
+										</a>
+									</div>
+									<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-4 col-lg-3">
+										<a href="#" class="b-categ">
+											<picture>
+												<img src="https://picsum.photos/400/401" alt="">
+											</picture>
+											<div class="b-categ-title">Обувь</div>
+										</a>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<div class="confg-result">
+									<div class="config-result-header">
+										<div class="flex-row flex-row-padding-x middle-xs">
+											<div class="col-xs-12 col-sm config-result-header-aside">
+												<a href="#" class="link-attention">
+													<i class="c-ico ico-25">!</i>
+													<span><span>Подробнее о партнерах</span></span>
+												</a>
+											</div>
+											<div class="col-xs-12 col-sm"><h3>Найдено партнеров: 1372</h3></div>
+										</div>
+									</div>
+
+									<div class="confg-result-list">
+
+										<div class="flex-row b-partners-list">
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="userimg/card-10.jpg" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/200/500" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/400/400" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/300/300" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/400/100" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/300/300" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+												<a href="#cardlink" class="b-partner box box-shadow">
+													<div class="b-partner-node b-partner-img">
+														<picture>
+															<img src="https://picsum.photos/300/300" alt="">
+														</picture>
+													</div>
+													<div class="b-partner-node b-partner-descr usercontent">
+														<div class="b-partner-title">ОАО "Санаторий Озерный"</div>
+														<div class="b-partner-details">
+															<ul>
+																<li>санаторий "Озерный"</li>
+																<li>http://ozero.by</li>
+															</ul>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</section>
+
+
+
+						</div>
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>
+

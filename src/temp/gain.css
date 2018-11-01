@@ -1,0 +1,613 @@
+.is-gained {
+	background-color: #fff;
+	font-weight: 500; }
+	.is-gained .header-row:before,
+	.is-gained .layout-row:before,
+	.is-gained .h-topline:before {
+		background-color: rgba(0, 0, 0, 0.8);
+		transition: opacity 0s; }
+	.is-gained .box-shadow {
+		box-shadow: none; }
+	.is-gained .l-header {
+		height: 340px; }
+	.is-gained img,
+	.is-gained object {
+		filter: saturate(0); }
+	.is-gained input[type="text"], .is-gained input[type="search"], .is-gained input[type="email"], .is-gained input[type="date"], .is-gained textarea,
+	.is-gained input[type="text"]:focus, .is-gained input[type="search"]:focus, .is-gained input[type="email"]:focus, .is-gained input[type="date"], .is-gained textarea:focus {
+		font-weight: 500;
+		font-size: 20px;
+		border-color: #000;
+		outline: 3px solid #000;
+		border-radius: 0; }
+	.is-gained label input[type="checkbox"] + span, .is-gained label input[type="radio"] + span {
+		font-size: 20px;
+		font-weight: 400;
+		color: #000; }
+	.is-gained label input[type="checkbox"] + span:before {
+		border: 2px solid #000; }
+	.is-gained a {
+		color: #000; }
+	.is-gained h3, .is-gained .heading-level-3 {
+		font-size: 24px;
+		font-weight: 500; }
+	.is-gained h4, .is-gained .heading-level-4 {
+		font-size: 24px;
+		font-weight: 500; }
+	.is-gained .link--white {
+		color: #fff; }
+	.is-gained .color--grey {
+		color: #000; }
+	.is-gained .bg--blue {
+		background-color: #000; }
+	.is-gained .promo-slider {
+		display: none; }
+	.is-gained .topline-gain {
+		background-color: #000; }
+		.is-gained .topline-gain svg {
+			fill: #fff; }
+	.is-gained .header-content {
+		padding-top: 0; }
+	.is-gained .h-topline {
+		height: auto;
+		position: relative;
+		width: auto;
+		left: 0; }
+	.is-gained .h-topline .maxwrap {
+		display: block;
+		height: auto; }
+	.is-gained .topline-menu {
+		padding-left: 2px; }
+	.is-gained .topline-menu > li > a {
+		font-size: 20px; }
+	.is-gained .topline-menu .t-arrow:hover {
+		box-shadow: 0 0 0 4px #000; }
+	.is-gained .topline-menu .topline-sub {
+		box-shadow: 0 0 0 4px #000;
+		margin-top: 0;
+		font-size: 24px; }
+	.is-gained .topline-nav:hover {
+		position: relative;
+		z-index: 1; }
+	.is-gained .topline-aside {
+		padding: 10px 30px 20px 0; }
+	.is-gained .toplink-schedule > i {
+		display: none; }
+	.is-gained .topline-gain {
+		margin-left: 20px; }
+	.is-gained .topline-gain,
+	.is-gained .topline-gain a {
+		height: 50px;
+		width: 50px; }
+	.is-gained .topline-gain svg {
+		width: 32px;
+		height: 32px; }
+	.is-gained .topline-search {
+		margin-left: 20px; }
+	.is-gained .topline-search,
+	.is-gained .topline-search a {
+		height: 50px;
+		width: 50px; }
+	.is-gained .topline-search svg {
+		width: 32px;
+		height: 32px; }
+	.is-gained .link-iblogin {
+		font-size: 20px;
+		border-radius: 0;
+		background-color: #fff;
+		color: #000;
+		height: 50px;
+		line-height: 50px;
+		border: 0; }
+	.is-gained .link-iblogin svg {
+		display: none; }
+	.is-gained .topline-lang {
+		margin-left: 20px; }
+	.is-gained .topline-lang > a {
+		font-size: 20px; }
+	.is-gained .h-currency {
+		background-color: #000; }
+	.is-gained .currency-node:before {
+		background-color: #fff;
+		color: #000; }
+	.is-gained .choices .choices__inner, .is-gained .choices.is-open .choices__inner, .is-gained .choices.is-focused .choices__inner {
+		border: 1px solid #000;
+		border-radius: 0;
+		outline: 3px solid #000; }
+	.is-gained .h-topmenu-wrap {
+		margin-top: 30px; }
+	.is-gained .h-topmenu {
+		margin-left: 0; }
+	.is-gained .h-topmenu-wrap,
+	.is-gained .h-topmenu,
+	.is-gained .h-topmenu li,
+	.is-gained .topmenu-link {
+		height: 100px; }
+	.is-gained .topmenu-link {
+		font-size: 24px; }
+	.is-gained .topmenu-link:hover {
+		border-bottom-color: #000;
+		color: #000; }
+	.is-gained .topmenu-link.active,
+	.is-gained .topmenu-link.topmenu-link--active {
+		background-color: #000;
+		color: #fff; }
+	.is-gained .sitemap-note {
+		display: none; }
+	.is-gained .sitemap-main header {
+		font-size: 24px; }
+		.is-gained .sitemap-main header a {
+			border-bottom: 2px solid #000; }
+			.is-gained .sitemap-main header a:hover {
+				background-color: #000;
+				color: #fff;
+				outline: 4px solid #000; }
+	.is-gained .sitemap-main li a {
+		font-size: 20px;
+		color: #000;
+		border-bottom: 1px solid #000; }
+		.is-gained .sitemap-main li a:hover {
+			background-color: #000;
+			color: #fff;
+			outline: 4px solid #000; }
+	.is-gained .sitemap-banner {
+		display: none; }
+	.is-gained .c-ico {
+		border-width: 3px;
+		border-color: #000; }
+	.is-gained .ico--blue svg {
+		fill: #000; }
+	.is-gained .nav-toggle {
+		font-size: 24px; }
+		.is-gained .nav-toggle span {
+			border-bottom: 2px solid #000; }
+		.is-gained .nav-toggle:hover span {
+			outline: 10px solid #000;
+			background-color: #000;
+			color: #fff; }
+		.is-gained .nav-toggle .nav-toggle-ctrl {
+			display: none; }
+	.is-gained .nav-list {
+		padding-bottom: 100px; }
+		.is-gained .nav-list a {
+			font-size: 24px;
+			font-weight: 400;
+			display: inline-block; }
+			.is-gained .nav-list a:hover {
+				background-color: #000;
+				outline: 10px solid #000;
+				color: #fff; }
+		.is-gained .nav-list .labels-list {
+			display: none; }
+	.is-gained .nav-list > li > a {
+		color: #000; }
+	.is-gained .currency-full {
+		background-color: #000;
+		color: #fff; }
+	.is-gained .cf-rates th {
+		color: #fff;
+		font-size: 14px; }
+	.is-gained .cf-rates td svg {
+		display: none; }
+	.is-gained .currency-full .cf-footer a {
+		color: #000;
+		background-color: #fff;
+		outline: 8px solid #fff;
+		font-weight: 700; }
+	.is-gained .currency-toggle.active {
+		background-color: #fff; }
+	.is-gained .currency-toggle .c-ico {
+		box-shadow: none; }
+	.is-gained .b-content-title {
+		background-color: #fff; }
+		.is-gained .b-content-title a {
+			color: #000; }
+		.is-gained .b-content-title h1 {
+			color: #000; }
+		.is-gained .b-content-title picture {
+			display: none; }
+		.is-gained .b-content-title .backnav {
+			padding-left: 40px; }
+	.is-gained .box-letter {
+		box-shadow: none; }
+	.is-gained .bg--gradient {
+		background: transparent; }
+	.is-gained .box {
+		box-shadow: none; }
+		.is-gained .box:hover {
+			box-shadow: none; }
+	.is-gained .promo-slider + .l-popular {
+		padding-top: 0; }
+	.is-gained .l-popular .popular-col:first-child .box,
+	.is-gained .l-popular .products-col:first-child .box,
+	.is-gained .l-products-top .popular-col:first-child .box,
+	.is-gained .l-products-top .products-col:first-child .box {
+		background-color: #000; }
+	.is-gained .l-popular .maxwrap,
+	.is-gained .l-products-top .maxwrap {
+		display: block; }
+	.is-gained .l-popular .popular-col,
+	.is-gained .l-popular .products-col,
+	.is-gained .l-products-top .popular-col,
+	.is-gained .l-products-top .products-col {
+		display: block;
+		max-width: none;
+		padding: 0 0 0; }
+	.is-gained .l-popular .box,
+	.is-gained .l-products-top .box {
+		min-height: auto;
+		transition: none; }
+		.is-gained .l-popular .box:hover,
+		.is-gained .l-products-top .box:hover {
+			color: #fff;
+			background-color: #000; }
+	.is-gained .l-popular .card-node,
+	.is-gained .l-products-top .card-node {
+		display: none; }
+	.is-gained .l-popular .card-title,
+	.is-gained .l-products-top .card-title {
+		font-size: 24px;
+		display: block;
+		padding-bottom: 0;
+		font-weight: 700; }
+	.is-gained .l-popular .popular-col:first-child .box .card-title,
+	.is-gained .l-products-top .products-col:first-child .box .card-title {
+		font-size: 32px; }
+	.is-gained .l-news-row .news-col.news-col-lead .box {
+		background-color: #000; }
+		.is-gained .l-news-row .news-col.news-col-lead .box a {
+			color: #fff; }
+	.is-gained .l-news-row:not(.l-people-row) .maxwrap {
+		display: block;
+		padding: 0; }
+	.is-gained .l-news-row:not(.l-people-row) .news-col {
+		padding: 0 20px;
+		display: block; }
+	.is-gained .l-news-row:not(.l-people-row) .box {
+		padding: 10px;
+		margin: 0; }
+	.is-gained .l-news-row:not(.l-people-row) .card-news-img {
+		display: none; }
+	.is-gained .l-news-row:not(.l-people-row) .card-news-title {
+		display: block;
+		padding-bottom: 0;
+		font-size: 24px; }
+	.is-gained .l-news-row:not(.l-people-row) .card-news-item {
+		border: 4px solid #000;
+		margin: 20px 0;
+		font-size: 18px; }
+		.is-gained .l-news-row:not(.l-people-row) .card-news-item .card-node > a {
+			display: inline-block;
+			transition: none; }
+			.is-gained .l-news-row:not(.l-people-row) .card-news-item .card-node > a:hover {
+				color: #fff;
+				background-color: #000;
+				outline: 4px solid #000; }
+	.is-gained .l-news-row:not(.l-people-row) .card-news-date {
+		display: inline-block;
+		margin-bottom: 20px;
+		background-color: #000;
+		color: #fff;
+		position: relative;
+		opacity: 1;
+		transform: none;
+		top: 0;
+		left: 0;
+		padding: 1rem;
+		font-size: 16px;
+		text-decoration: none; }
+	.is-gained .card-rates {
+		padding: 4px; }
+	.is-gained .card-rates .card-rates-title {
+		color: #000; }
+	.is-gained .card-promo-index + .box-row,
+	.is-gained .l-news-row + .box-row {
+		margin-top: 0; }
+	.is-gained .box-row [class^="col-xs"] {
+		padding: 10px; }
+	.is-gained .l-row {
+		display: block; }
+		.is-gained .l-row .col-xs-6 {
+			display: block;
+			max-width: none;
+			padding: 0; }
+	.is-gained .l-people-row {
+		font-size: 20px; }
+		.is-gained .l-people-row .card-people-title {
+			font-size: 24px; }
+	.is-gained .card-offices-list .c-ico {
+		display: none; }
+	.is-gained .card-offices-list a {
+		font-size: 20px;
+		font-weight: 700; }
+	.is-gained .card-offices-title {
+		color: #000; }
+	.is-gained .card-promo {
+		background-color: #000;
+		font-size: 24px; }
+		.is-gained .card-promo .bg-gradient {
+			display: none; }
+	.is-gained .backnav {
+		padding-left: 0;
+		font-size: 20px; }
+		.is-gained .backnav a {
+			text-decoration: underline; }
+	.is-gained .button {
+		border-radius: 0;
+		height: 60px;
+		line-height: 62px;
+		font-size: 20px;
+		background-color: #000 !important;
+		color: #fff !important; }
+	.is-gained .button-dashed {
+		border-style: solid;
+		border-color: #000; }
+	.is-gained .button-info {
+		color: #fff;
+		border-style: solid;
+		border-color: #000; }
+	.is-gained .button-info svg {
+		fill: #fff;
+		top: 18px;
+		right: 8px; }
+	.is-gained .f-phone .c-ico {
+		display: none; }
+	.is-gained .b-content-title {
+		padding: 0;
+		margin: 0;
+		color: #000;
+		font-size: 20px; }
+	.is-gained .b-aside {
+		color: #000;
+		font-size: 20px; }
+	.is-gained .source-selector {
+		padding-left: 0; }
+	.is-gained .source-selector label input + span {
+		color: #000; }
+	.is-gained .box-letter {
+		padding: 0; }
+	.is-gained .l-license {
+		display: block; }
+		.is-gained .l-license.flex-row.flex-row-padding {
+			margin: 0; }
+		.is-gained .l-license > .col-xs-12 {
+			display: block;
+			flex-basis: 100%;
+			max-width: none; }
+	.is-gained .usercontent {
+		font-size: 24px; }
+		.is-gained .usercontent ul {
+			font-size: 24px;
+			font-weight: 500; }
+		.is-gained .usercontent ol {
+			font-size: 24px;
+			font-weight: 500; }
+			.is-gained .usercontent ol li {
+				padding-left: 0; }
+			.is-gained .usercontent ol li:before {
+				display: none; }
+	.is-gained .license-card {
+		padding: 0; }
+	.is-gained .license-card svg {
+		display: none; }
+	.is-gained .holding-card .card-node {
+		padding: 0; }
+	.is-gained .holding-name {
+		font-size: 24px; }
+	.is-gained .converter .converter-header {
+		padding-bottom: 1rem;
+		display: none; }
+	.is-gained .converter .converter-date {
+		font-size: 24px;
+		color: #000;
+		font-weight: 700; }
+	.is-gained .l-advantage {
+		margin: 0;
+		display: block;
+		padding-bottom: 50px; }
+		.is-gained .l-advantage.flex-row.flex-row-padding > [class^="col-"] {
+			display: block;
+			max-width: none;
+			padding: 0 0 20px; }
+	.is-gained .advantage-card {
+		background: none;
+		background: #000; }
+	.is-gained .advantage-card .card-node {
+		display: none;
+		padding: 20px; }
+	.is-gained .advantage-card .advantage-name {
+		display: block;
+		font-size: 24px; }
+	.is-gained .b-story .story-aside {
+		display: none; }
+	.is-gained .b-story-reverse .story-aside {
+		display: none; }
+	.is-gained .l-faq.l-faq-bar {
+		background-color: transparent; }
+	.is-gained .faq-q {
+		font-size: 24px; }
+	.is-gained .faq-q.active,
+	.is-gained .faq-q:hover {
+		color: #000; }
+	.is-gained .l-faq > div {
+		border: 4px solid #000;
+		margin-bottom: 20px;
+		box-shadow: none; }
+	.is-gained a.faq-q:after {
+		border: 0;
+		transform: scale(2.5);
+		filter: contrast(200%) saturate(0) brightness(0); }
+	.is-gained .faq-a {
+		font-size: 24px;
+		color: #000; }
+	.is-gained .f-phone {
+		font-size: 20px;
+		color: #000; }
+	.is-gained .b-advantages {
+		color: #000; }
+	.is-gained .ico-link .c-ico {
+		display: none; }
+	.is-gained .config-title {
+		font-weight: 500;
+		font-size: 24px; }
+	.is-gained .toggler-action label {
+		color: #000; }
+	.is-gained .toggler-action input:checked + label {
+		background-color: #000;
+		color: #fff; }
+	.is-gained .b-card .b-card-title {
+		color: #000;
+		font-weight: 700; }
+	.is-gained .b-card-feature .c-ico {
+		display: none; }
+	.is-gained .b-card-details ul li {
+		padding-left: 0; }
+	.is-gained .b-card-details ul li:before {
+		display: none; }
+	.is-gained .b-card-details object {
+		margin-left: 0; }
+	.is-gained dt {
+		color: #000;
+		font-size: 20px;
+		font-weight: 500; }
+	.is-gained dd {
+		font-size: 24px;
+		color: #000;
+		font-weight: 500; }
+	.is-gained .b-offer-list {
+		margin: 0;
+		display: block; }
+	.is-gained .b-offer-list .col-xs-12 {
+		display: block;
+		padding: 20px 0;
+		max-width: none; }
+	.is-gained .b-offer {
+		max-width: none;
+		box-shadow: none;
+		color: #000;
+		border: 4px solid #000; }
+		.is-gained .b-offer .labels span {
+			padding: 10px;
+			background-color: #000;
+			color: #fff;
+			font-size: 16px; }
+	.is-gained .b-offer picture, .is-gained .b-offer img {
+		display: none; }
+	.is-gained .b-offer-title {
+		color: #000;
+		font-size: 30px;
+		font-weight: 500; }
+	.is-gained .b-offer-details {
+		text-shadow: none; }
+	.is-gained .b-offer-details ul {
+		color: #000;
+		font-size: 20px; }
+	.is-gained .tabs a {
+		font-size: 24px;
+		font-weight: 500; }
+		.is-gained .tabs a span {
+			border: 0; }
+	.is-gained .tabs a.is-active {
+		background-color: #000;
+		color: #fff;
+		border-color: #000; }
+	.is-gained .product {
+		padding: 20px 0 40px; }
+	.is-gained .product-image {
+		display: none; }
+	.is-gained .product-details dd {
+		font-size: 36px; }
+	.is-gained .numeric span {
+		color: #000;
+		font-weight: 500; }
+	.is-gained .usercontent table {
+		font-size: 20px; }
+	.is-gained table.zoom th,
+	.is-gained table.zoom td {
+		font-size: 20px; }
+	.is-gained .tip,
+	.is-gained .form-tip {
+		color: #000;
+		font-size: 18px; }
+	.is-gained .b-content-title + .maxwrap > .usercontent:first-child {
+		margin-top: inherit; }
+	.is-gained input[type="radio"] + span:before {
+		background-color: #000; }
+	.is-gained .tag {
+		border-radius: 0;
+		border: 0;
+		background-color: #000;
+		color: #fff;
+		font-size: 20px;
+		line-height: 40px;
+		padding: 10px; }
+	.is-gained .t-block {
+		margin-bottom: 1rem; }
+	.is-gained .t-block .t-control .c-ico {
+		border-color: #000; }
+	.is-gained .t-block .t-control svg {
+		fill: #000; }
+	.is-gained .b-dates {
+		background-color: #000;
+		margin-bottom: 40px;
+		padding: 10px; }
+	.is-gained .hash-list {
+		font-size: 20px; }
+	.is-gained .place {
+		border: 4px solid #000;
+		margin-bottom: 20px;
+		padding: 2rem; }
+		.is-gained .place .col {
+			font-size: 20px; }
+		.is-gained .place header {
+			font-size: 20px; }
+			.is-gained .place header a {
+				font-size: 24px;
+				font-weight: 500; }
+	.is-gained .place-adress-alt {
+		color: #000; }
+	.is-gained .place-distance svg {
+		fill: #000;
+		width: 24px;
+		height: 24px; }
+	.is-gained .place-route span {
+		border: 0; }
+	.is-gained .b-categ {
+		box-shadow: none;
+		border: 4px solid #000; }
+		.is-gained .b-categ picture,
+		.is-gained .b-categ img {
+			display: none; }
+		.is-gained .b-categ .b-categ-title {
+			font-size: 24px;
+			color: #000;
+			font-weight: 500; }
+		.is-gained .b-categ.is-selected {
+			background-color: #000; }
+			.is-gained .b-categ.is-selected .b-categ-title {
+				color: #fff; }
+	.is-gained .b-partner {
+		border: 4px solid #000; }
+		.is-gained .b-partner picture,
+		.is-gained .b-partner img {
+			display: none; }
+		.is-gained .b-partner .b-partner-title {
+			color: #000;
+			font-size: 24px;
+			font-weight: 500; }
+	.is-gained .card-advantages .card-node {
+		font-size: 20px; }
+	.is-gained .card-advantages .card-title {
+		font-size: 24px; }
+	.is-gained .socials .social {
+		background: #000;
+		color: #fff; }
+	.is-gained .sq-docs .doc-node {
+		border: 4px solid #000;
+		font-size: 18px;
+		color: #000; }
+		.is-gained .sq-docs .doc-node:before {
+			background-color: #000;
+			font-size: 18px; }
+
+/*# sourceMappingURL=maps/gain.css.map */

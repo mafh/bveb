@@ -1,0 +1,372 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-6.webp" type="image/webp">
+								<img src="userimg/title-6.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">О банке</a></li>
+									<li><a href="#">Офисы и банкоматы</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<h1>Офисы и банкоматы</h1>
+							</div>
+						</header>
+
+						<div class="maxwrap usercontent">
+
+							<div class="js-tabs">
+								<div class="tabs">
+									<input type="hidden">
+									<a href="">Офисы</a>
+									<a href="">Банкоматы СБС</a>
+									<a href="">Инфокиоски</a>
+									<a href="">Офисы и банкоматы</a>
+								</div>
+							</div>
+
+							<div class="js-places-view">
+
+								//= partials/filter-offices.html
+
+								<section class="places js-places places-offices" id="offices_list">
+
+									<div class="place js-place">
+										<div class="col">
+											<header>
+												<a href="#office-1" class="js-popup-open">Минск, ул. Мясникова, 32</a>
+											</header>
+											<p>Центральный аппарат</p>
+											<div class="place-adress-alt ico-link">
+												<i class="c-ico ico-30 svg-20">
+													<svg><use xlink:href="../i/common.svg#metro"></use></svg>
+												</i>
+												<span>Немига</span>
+											</div>
+											<div class="place-distance is-hidden">
+												<svg viewBox="0 0 48 48"><use xlink:href="#ico-walk"></use></svg>
+												<span>--</span>
+												<a href="#route" data-location="52.1231, 37.324125" class="place-route js-route js-popup-open">
+													<svg viewBox="0 0 338.7 460.7"><use xlink:href="#ico-placemark"></use></svg>
+													<span>Как проехать</span>
+												</a>
+											</div>
+										</div>
+										<div class="col">
+											<a href="#" class="ico-link link-schedule">
+												<i class="c-ico ico-40 svg-20">
+													<svg><use xlink:href="../i/common.svg#schedule"></use></svg>
+												</i>
+												<span>Запись<br>на&nbsp;обслуживание</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="place js-place">
+										<div class="col">
+											<header>
+												<a href="#office-1" class="js-popup-open">Минск, ул. Мясникова, 32</a>
+											</header>
+											<p>Центральный аппарат</p>
+											<div class="place-adress-alt ico-link">
+												<i class="c-ico ico-30 svg-20">
+													<svg><use xlink:href="../i/common.svg#metro"></use></svg>
+												</i>
+												<span>Немига</span>
+											</div>
+											<div class="place-distance is-hidden">
+												<svg viewBox="0 0 48 48"><use xlink:href="#ico-walk"></use></svg>
+												<span>--</span>
+											</div>
+										</div>
+										<div class="col">
+											<header>Для физичеких лиц</header>
+											пн. – чт.: 8.30 – 16.00<br>
+											пт., предпраздн. дни: 8.30 – 15.00<br>
+											вых.: сб., вс., праздн. дни
+										</div>
+										<div class="col">
+											<header>Для юридических лиц</header>
+											Пн.-пт.: 10:00-19:00
+											<br>
+											Сб.-вс.: выходной
+										</div>
+										<div class="col">
+											<a href="#" class="ico-link link-schedule">
+												<i class="c-ico ico-40 svg-20">
+													<svg><use xlink:href="../i/common.svg#schedule"></use></svg>
+												</i>
+												<span>Запись<br>на&nbsp;обслуживание</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="place js-place">
+										<div class="col">
+											<header><a href="">Болбасово посёлок, Грицевца 30/10</a></header>
+											<p>ОАО «Оршанский авиаремонтный завод», проходная</p>
+											<div class="place-distance is-hidden">
+												<svg viewBox="0 0 48 48"><use xlink:href="#ico-walk"></use></svg>
+												<span>--</span>
+											</div>
+										</div>
+										<div class="col">
+											<header>Для физичеких лиц</header>
+											Пн.-пт.: 10:00-19:00<br>Сб.: 11:00-18:00
+										</div>
+										<div class="col">
+											<header>Для юридических лиц</header>
+											Пн.-пт.: 10:00-19:00<br>Сб.-вс.: выходной
+										</div>
+										<div class="col">
+											<a href="#" class="ico-link link-schedule">
+												<i class="c-ico ico-40 svg-20">
+													<svg><use xlink:href="../i/common.svg#schedule"></use></svg>
+												</i>
+												<span>Запись<br>на&nbsp;обслуживание</span>
+											</a>
+										</div>
+									</div>
+
+									<div class="place js-place">4</div>
+									<div class="place js-place">5</div>
+									<div class="place js-place">6</div>
+									<div class="place js-place">7</div>
+									<div class="place js-place">8</div>
+									<div class="place js-place">9</div>
+									<div class="place js-place">10</div>
+									<div class="place js-place">11</div>
+									<div class="place js-place">12</div>
+									<div class="place js-place">13</div>
+									<div class="place js-place">14</div>
+									<div class="place js-place">15</div>
+
+									<script type="x-template" id="office-1">
+										<div class="usercontent">
+											<div class="flex-row flex-row-padding">
+												<div class="col-xs-12 col-sm-6">
+													<!-- as is -->
+													<h3 class="color--orange">Режим работы для физических лиц:</h3>
+													пн.-чт.: 9.00 – 18.30<br>
+													пт., предпраздн. дни: 9.00 – 17.30<br>
+													<br>
+													Продажа драгоценных металлов и памятных монет:<br>
+													пн.-чт.: 09.00 – 16.15<br>
+													пт., предпраздн.дни: 09.00-15.00<br>
+													<br>
+													Покупка драгоценных металлов:<br>
+													пн.-чт.: 09.00 – 16.15<br>
+													пт., предпраздн.дни: 09.00-15.00<br>
+													<br>
+													Покупка драгоценных металлов:<br>
+													пн.-чт.: 09.00 – 16.15<br>
+													обед.перерыв: 11.30 – 12.00<br>
+													тех.перерывы: 14.00 – 14.15<br>
+													пт., предпраздн.дни: 09.00-15.00<br>
+													обед.перерыв: 11.30 – 12.00<br>
+													тех.перерыв: 14.00 – 14.15<br>
+													В случае, если пятница является предпраздничным днем, время обслуживания клиентов сокращается на 1 (один) час.<br>
+													Вых.дни: сб., вс, праздн.дни».<br>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<h3 class="color--blue">Режим работы для юридических лиц:</h3>
+													пн.-чт.: 9.00 – 16.00<br>
+													<br>
+													пт., предпраздн. дни: 9.00 – 15.00<br>
+													Прием выручки в белорусских рублях от юридических лиц и индивидуальных предпринимателей:<br>
+													пн.-чт.: 09.00-18.40<br>
+													пт., предпр.дни: 09.00-17.40<br>
+													<br>
+													автоматический сейф - круглосуточно<br>
+													<br>
+													выходные дни.: сб., вс., праздн. дни<br>
+													<br>
+													В случае, если пятница является предпраздничным днем, время обслуживания клиентов сокращается на 1 час.<br>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<h3 class="bg--orange">Услуги для физических лиц</h3>
+													<p>Валютно-обменные операции</p><p>Вклады (депозиты)</p><p>Выдача наличных денежных средств с использованием банковских пластиковых карточек</p><p>Денежные переводы</p><p>Денежные переводы. Переводы в иностранной валюте</p><p>Денежные переводы. Переводы по системе Blizko</p><p>Денежные переводы. Переводы по системе Western Union</p><p>Кредитование. Кредитные карточки</p><p>Кредитование. Кредитование жилых помещений в домах застройщиков-кредитополучателей </p><p>Кредитование. Кредиты на потребительские нужды</p><p>Кредитование. Кредиты на приобретение транспортных средств</p><p>Кредитование. Кредиты на финансирование недвижимости</p><p>Кредитование. Овердрафтное кредитование</p><p>Платежи</p><p>Прием денежных средств в белорусских рублях и иностранной валюте в погашение кредитов, выданных банком</p><p>Прием наличных денежных средств для зачисления на банковские счета, во вклады (депозиты)</p><p>Сберегательные сертификаты</p><p>Текущие (расчетные) счета</p>
+													<p>Текущий счет «Пенсионный»</p>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<h3 class="bg--blue">Услуги для юридических лиц</h3>
+													<p>Прием выручки от юридических лиц и индивидуальных предпринимателей</p>
+													<p>Прием наличных денежных средств в белорусских рублях для пополнения текущих (расчетных) счетов частных унитарных предприятий, индвидуальных предпринимателей, нотариусов и адвокатов, осуществляющих адвокатскую деятельность индивидуально, открытых в банке</p>
+													<p>Прием платежей</p>
+												</div>
+											</div>
+										</div>
+									</script>
+
+								</section>
+
+								<div id="offices_map">
+									<div class="places-map" id="places_map"></div>
+								</div>
+
+							</div>
+
+							<script type="x-template" id="route">
+								<iframe width="100%" height="450" frameborder="0" style="border:0" src="//www.google.com/maps/embed/v1/directions?origin=40.7127837,-74.0059413&destination=42.3600825,-71.05888&key=AIzaSyBQL00FgROUCp6WZvnPdEdiyhE3f49hYew" allowfullscreen></iframe>
+							</script>
+
+
+							<script data-skip-moving="true">
+								var currentPlaces = [
+									{"adress": "ул. Мясникова, 32, 220030", "title": "Центральный аппарат", "work_fiz": "пн. – чт.: 9.00 – 18.30пт., предпраздн. дни: 9.00 – 17.30", "work_ur": "пн. – чт.: 9.00 – 16.00пт., предпраздн. дни: 9.00 – 15.00", "latlng": "53.898259, 27.543345"},                                    {"adress": "ул. Московская, 13, 220007", "title": "Центр банковских услуг 1 (центральный аппарат)", "work_fiz": "пн. – чт.: 9.00 – 18.30пт.: 9.00 – 17.30сб.: 9.00 – 17.00, вых.: вс., праздн. дни", "work_ur": "пн. – чт.: 9.00 – 18.30пт., предпразд. дни: 9.00 – 17.30вых.: сб., вс., праздн. дни", "latlng": "53.88752, 27.53891"},                                    {"adress": "пр. Победителей, 29", "title": "Центр розничного бизнеса №290/1", "work_fiz": "пн. – чт: 9:30 – 18:00пт., предпраздн. дни: 9:30 – 17:00вых.: сб., вс., праздн. дни", "work_ur": "пн. – чт.: 9.30 – 18.00обед: 14.15 – 15.00пт., предпразд. дни: 09.30 – 17.00обед: 14.15 – 15.00", "latlng": "53.912289, 27.541134"},                                                {"adress": "пр. Победителей, 100", "title": "Минское отделение 2", "work_fiz": "пн. – чт.: 9.00 – 16.30пт., предпраздн. дни: 9.00 – 15.15вых.: сб., вс., праздн. дни", "work_ur": "пн. – чт.: 9.00 – 15.30пт., предпраздн. дни: 9.00 – 14.30вых.: сб., вс., праздн. дни", "latlng": "53.938088, 27.481916"},                                    {"adress": "пр. Независимости, 95, 220043", "title": "Расчетно-кассовый центр «Луч» ", "work_fiz": "пн. – чт.: 9.00 – 19.00пт., предпраздн. дни: 9.00 – 18.00 вых.: сб., вс., праздн. дни", "work_ur": "пн. – чт.: 9.00 – 15.30пт., предпраздн. дни: 9.00 – 15.00вых.: сб., вс., праздн. дни", "latlng": "53.925595, 27.615613"},                                    {"adress": "ул. Кульман, 3", "title": "ЦРБ №560/1", "work_fiz": "пн. – чт.: 9.10 – 16.30пт., предпр. дни: 9.10 – 15.15сб.: 9.30 – 17.00обед: 14:00 – 14:45техн. перерыв: 11.30 – 11.45", "work_ur": "пн. – чт.: 9.10 – 16.30пт., предпр. дни: 9.10 – 15.15сб.: 9.30 – 17.00обед: 14:00 – 14:45техн. перерыв: 11.30 – 11.45", "latlng": "53.919808, 27.582647"},                                    {"adress": "пер. Асаналиева, 2, 220024", "title": "Минское отделение 3", "work_fiz": "пн. – чт.: 9.00 – 17.00пт., предпраздн. дни: 9.00 – 16.00вых.: сб., вс., праздн. дни", "work_ur": "пн. – чт.: 9.00 – 15.30 пт., предпраздн. дни: 9.00 – 15.00вых.: сб., вс., праздн. дни", "latlng": "53.84284, 27.53781"},                                    {"adress": "пр. Дзержинского, 91", "title": "Центр розничного бизнеса №620/2", "work_fiz": "пн. – сб.: 10.30 – 19.00предпраздн. дни: 10.30 – 18.00 вых.: вс., праздн. дни", "work_ur": "пн. – пт.: 9.45 – 21.00сб., вс., празд. дни: 9.50 – 21.00", "latlng": "53.859193, 27.481985"},                                    {"adress": "ул. Якубова, 10, 220101", "title": "Центр розничного бизнеса №620/1 ", "work_fiz": "пн. – пт.: 10.00 – 18.00вых.: сб., вс., праздн. дни", "work_ur": "", "latlng": "53.851261, 27.59790"},                                    {"adress": "ул. Бабушкина, 39, 220024", "title": "Расчетно-кассовый центр «Колядичи»", "work_fiz": "пн. – чт.: 8.30 – 16.00пт., предпраздн. дни: 8.30 – 15.00вых.: сб., вс., праздн. дни", "work_ur": "пн. – чт.: 8.30 – 15.30пт., предпраздн. дни: 8.30 – 14.30 вых.: сб., вс., праздн. дни", "latlng": "53.800869, 27.593555"},                                    {"adress": "223060 Минская обл., Минский р-н, д. Большой Тростенец, ул.Молодежная, 2А ", "title": "Расчетно-кассовый центр &quot;Тростенец&quot;", "work_fiz": "пн. – чт.: 9.00 – 16.45 обед: 12.00 – 12.45пт., предпраздн. дни: 9.00 – 15.30 обед: 12.00 – 12.45вых.: сб., вс., праздничные дни", "work_ur": "пн. – чт.: 9.00 – 16.45 обед: 12.00 – 12.45пт., предпраздн. дни: 9.00 – 15.30", "latlng": "53.856938, 27.690036"},                                    {"adress": "ул. Заславская, 10, 220004", "title": "Минское отделение «Центральное»", "work_fiz": "пн. – чт.: 9.00 – 19.00пт.: 9.00 – 18.00предпразд. дни: 9.00 – 17.00вых.: сб., вс., празд. дни", "work_ur": "пн. – чт.: 9.00 – 16.00пт., предпраздн. дни: 9.00 – 15.00вых.: сб., вс., праздн. дни", "latlng": "53.9108, 27.539945"},                                    {"adress": "ул. Скрыганова, 6", "title": "Центр розничного бизнеса №570/1", "work_fiz": "пн. – пт.: 9.00 – 18.00предпраздн. дни: 9.00 – 17.00вых.: сб., вс., праздн. дни", "work_ur": "пн. – пт.: 9.00 – 18.00предпраздн. дни: 9.00 – 17.00вых.: сб., вс., праздн. дни", "latlng": "53.911748, 27.517008"},                                    {"adress": "ул. П. Глебки, 5", "title": "Центр розничного бизнеса №570/2", "work_fiz": "пн. – сб.: 10.30 – 19.00обед: 14.00 – 14.30предпраздн. дни: 10.30 – 18.00 вых.: вс., праздн. дни", "work_ur": "пн. – сб.: 10.10 – 21.00обед: 14.00 – 14.30вс.:10.10 – 21.00обед: 14.00 – 15.00техн. перерывы: 12.00 – 12.15, 17.00 – 17.15", "latlng": "53.908797, 27.469919"},                                    {"adress": "ул. Притыцкого, 93", "title": "Центр розничного бизнеса №570/3 ", "work_fiz": "пн. – сб.: 10.30 – 19.00обед: 14.30 – 15.00предпраздн. дни: 10.30 – 18.00 вых.: вс., праздн. дни", "work_ur": "пн. – вс.: 10.30 – 21.00обед. перерыв: 14:00 – 15:00техн. перерывы: 12.00 – 12:15, 17.00 – 17.15, 19.00 – 19.15", "latlng": "53.905849, 27.439921"},
+								]
+							</script>
+
+							//= partials/filter-bankomat.html
+
+							<section class="places places-bankomat">
+
+								<div class="place">
+									<div class="col">
+										<header><b>Орша, ул. Советская 2</b></header>
+										<p>Диагностический центр спортивной медицины</p>
+										<div class="place-adress-alt ico-link">
+											<i class="c-ico ico-30 svg-20">
+												<svg viewBox="0 0 26 15"><use xlink:href="#ico-check"></use></svg>
+											</i>
+											<span>Работает сейчас</span>
+										</div>
+									</div>
+									<div class="col">
+										<header>Режим работы</header>
+										в режиме работы организации
+									</div>
+									<div class="col">
+										<header>Валюта</header>
+										<i class="c-ico ico-40">BYN</i>
+										<i class="c-ico ico-40">USD</i>
+									</div>
+								</div>
+
+								<div class="place">
+									<div class="col">
+										<header><b>Орша, ул. 1 Мая 68</b></header>
+										<p>Столовая ОАО "Оршастройматериалы"</p>
+										<div class="place-adress-alt ico-link">
+											<i class="c-ico ico-30 svg-20">
+												<svg viewBox="0 0 26 15"><use xlink:href="#ico-check"></use></svg>
+											</i>
+											<span>Работает сейчас</span>
+										</div>
+									</div>
+									<div class="col">
+										<header>Режим работы</header>
+										24 часа
+									</div>
+									<div class="col">
+										<header>Валюта</header>
+										<i class="c-ico ico-40">BYN</i>
+									</div>
+								</div>
+
+								<div class="place">
+									<div class="col">
+										<header><b>Минск, Алибегова 13а</b></header>
+										<p>Магазин "Таир"</p>
+										<div class="place-adress-alt ico-link">
+											<i class="c-ico ico-30 svg-20">
+												<svg viewBox="0 0 26 15"><use xlink:href="#ico-check"></use></svg>
+											</i>
+											<span>Работает сейчас</span>
+										</div>
+									</div>
+									<div class="col">
+										<header>Режим работы</header>
+										24 часа
+									</div>
+									<div class="col">
+										<header>Валюта</header>
+										<i class="c-ico ico-40">BYN</i>
+										<i class="c-ico ico-40">USD</i>
+										<i class="c-ico ico-40">EUR</i>
+									</div>
+								</div>
+
+							</section>
+
+							//= partials/filter-infokiosk.html
+
+							<section class="places places-bankomat">
+
+								<div class="place">
+									<div class="col">
+										<header><b>Жлобин, ул. Барташова 17</b></header>
+										<p>ОАО "Банк БелВЭБ"</p>
+										<div class="place-adress-alt ico-link">
+											<i class="c-ico ico-30 svg-20">
+												<svg viewBox="0 0 26 15"><use xlink:href="#ico-check"></use></svg>
+											</i>
+											<span>Прием наличных</span>
+										</div>
+									</div>
+									<div class="col">
+										<header>Режим работы</header>
+										9:00 - 18:00 (пн. - пт.)
+										<br>
+										9:00 - 16:30 (предпр. дни)
+									</div>
+								</div>
+
+								<div class="place">
+									<div class="col">
+										<header><b>Минск, Победителей 20/1</b></header>
+										<p>Спортивно - оздоровительный комплекс "Мир фитнеса"</p>
+									</div>
+									<div class="col">
+										<header>Режим работы</header>
+										7:00 - 23:00 (пн. - пт.)
+										<br>
+										9:00 - 22:00 (сб., вс.)
+									</div>
+								</div>
+
+							</section>
+
+						</div>
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/foot.html
+
+	//= partials/scripts.html
+</body>
+</html>

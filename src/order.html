@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+							<picture>
+								<source srcset="userimg/title-8.webp" type="image/webp">
+								<img src="userimg/title-8.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Заказать карту</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<h1>Заказать карту</h1>
+							</div>
+						</header>
+
+						<div class="usercontent">
+							<div class="maxwrap">
+
+								<div class="box-letter">
+
+									<div class="order js-order-card">
+
+										<div class="order-loader">
+											<img src="i/preloader.svg" alt="">
+										</div>
+
+										<div class="order-step order-step-1">
+											<h2>Заказать карту</h2>
+											<div class="js-tabs">
+												<div class="tabs align-center">
+													<a href="#tab-1"><span>В интернет-банке</span></a>
+													<a href="#tab-2"><span>На сайте</span></a>
+												</div>
+												<div id="tab-1" class="tab-content">
+
+													<div class="order-legend flex-row flex-row-unwrap between-xs">
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Пройдите авторизацию или зарегистрируйтесь</p>
+															</div>
+														</div>
+														<div class="col-xs o-legend-arrow"><svg viewBox="0 0 96 96"><use xlink:href="#arrow-right"></use></svg></div>
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Заполните онлайн-заявку на выпуск / перевыпуск карточки</p>
+															</div>
+														</div>
+														<div class="col-xs o-legend-arrow"><svg viewBox="0 0 96 96"><use xlink:href="#arrow-right"></use></svg></div>
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Получите карточку курьером, почтой или в отделении банка</p>
+															</div>
+														</div>
+													</div>
+
+													<div class="flex-row o-legend-footer">
+														<div class="col-xs-12 center-xs">
+															<a href="#go-int-bank" class="button button-expand">Заказать</a>
+														</div>
+													</div>
+												</div>
+												<div id="tab-2" class="tab-content">
+													<div class="order-legend flex-row flex-row-unwrap between-xs">
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Заполните и отправьте онлайн-заявку</p>
+															</div>
+														</div>
+														<div class="col-xs o-legend-arrow"><svg viewBox="0 0 96 96"><use xlink:href="#arrow-right"></use></svg></div>
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Работник банка свяжется с Вами</p>
+															</div>
+														</div>
+														<div class="col-xs o-legend-arrow"><svg viewBox="0 0 96 96"><use xlink:href="#arrow-right"></use></svg></div>
+														<div class="col-xs">
+															<div class="o-legend-item">
+																<i class="c-ico bg--blue">
+																	<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#24hrs"></use></svg>
+																</i>
+																<p>Получите карточку в удобном для Вас отделении</p>
+															</div>
+														</div>
+													</div>
+													<div class="flex-row o-legend-footer">
+														<div class="col-xs-12 center-xs">
+															<a href="order-step-2" class="button button-expand js-proceed-step">Заказать</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="order-step order-step-2">
+											<div class="flex-row middle-xs">
+												<div class="col-xs-12"><h2>Онлайн-заявка на выпуск карточки</h2></div>
+											</div>
+
+											<form>
+												<div class="flex-row form-row">
+													<div class="col-xs-12 col-sm-6">
+
+														<div class="flex-row">
+															<div class="col-xs-12">
+																<span class="input-label">Платежная система</span>
+																<select data-select>
+																	<option placeholder>Выберите платежную систему</option>
+																	<option value="1">VISA</option>
+																	<option value="2">ASSIST</option>
+																	<option value="3">BITCOIN</option>
+																</select>
+															</div>
+															<div class="col-xs-12">
+																<span class="input-label">Вид карточки</span>
+																<select data-select>
+																	<option placeholder>Выберите вид карточки</option>
+																	<option value="1">Национальная</option>
+																	<option value="2">Международная</option>
+																</select>
+															</div>
+															<div class="col-xs-12">
+																<span class="input-label">Валюта счета</span>
+																<select data-select>
+																	<option placeholder>Выберите валюту счета</option>
+																	<option value="1">BYN</option>
+																	<option value="2">USD</option>
+																	<option value="3">EUR</option>
+																</select>
+															</div>
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Место получения карточки</span>
+																		<input type="text" value="" name="get-card-pos" placeholder="Где Вам удобно получить карточку">
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-xs-12 col-sm-6">
+
+														<div class="flex-row">
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Фамилия *</span>
+																		<input type="text" value="" name="fiz-sname">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Имя *</span>
+																		<input type="text" name="fiz-name">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Отчество *</span>
+																		<input type="text" name="fiz-mname">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Фамилия латиницей (как в паспорте)</span>
+																		<input type="text" value="" name="fiz-slatname" placeholder="Ivanov Ivan">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Дата рождения *</span>
+																		<input type="text" name="fiz-phone">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Мобильный телефон *</span>
+																		<input type="text" name="fiz-phone">
+																	</label>
+																</div>
+															</div>
+
+															<div class="col-xs-12">
+																<div class="input">
+																	<label>
+																		<span>Адрес электронной почты</span>
+																		<input type="email" name="fiz-emai;">
+																	</label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+
+											<div class="flex-row o-legend-footer">
+												<div class="col-xs-6">
+													<a href="order-step-1" class="button button-dashed js-proceed-step">Назад</a>
+												</div>
+												<div class="col-xs-6 end-xs">
+													<a href="order-step-3" class="button button-expand js-proceed-step">Отправить <span class="hide-640">заявку</span></a>
+												</div>
+											</div>
+										</div>
+
+										<div class="order-step order-step-3">
+											<h2>Введите код, направленный на указанный Вами номер мобильного телефона</h2>
+
+											<form class="flex-row form-row around-xs">
+												<div class="col-xs-12 col-sm-8 col-md-6">
+													<div class="input">
+														<label>
+															<span>Аутентификация пользователя</span>
+															<input type="text" value="" name="fiz-sname">
+														</label>
+													</div>
+												</div>
+												<div class="col-xs-12 center-xs">
+													<a href="order-step-4" class="button button-expand js-proceed-step">Готово</a>
+												</div>
+											</form>
+										</div>
+
+										<div class="order-step order-step-4">
+											<h2>Ваша заявка направлена в банк</h2>
+											<p align="center">Спасибо! Заявка будет рассмотрена в течении 2-х дней.</p>
+											<div class="flex-row o-legend-footer">
+												<div class="col-xs-12 center-xs">
+													<a href="#" class="button button-expand js-order-close">Закрыть</a>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>
