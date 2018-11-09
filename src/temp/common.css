@@ -725,7 +725,7 @@ img {
 	src: url("../fonts/MyriadPro-Bold.otf") format("opentype"); }
 
 .outline {
-	box-shadow: 1px 0 0 0 #ddd, 0 1px 0 0 #ddd, 1px 1px 0 0 #ddd, 1px 0 0 0 #ddd inset, 0 1px 0 0 #ddd inset; }
+	box-shadow: 1px 0 0 0 #ddd, 0 1px 0 0 #ddd, 1px 1px 0 0 #ddd, 1px 0 0 0 #ddd inset, 0 1px 0 0 #ddd inset; }
 
 code {
 	display: inline-block;
@@ -2433,14 +2433,46 @@ a.card:hover .readmore svg {
 	position: relative;
 	z-index: 1; }
 
+.b-aside-card-group {
+	margin-bottom: 20px; }
+
 .b-aside-card {
 	display: block;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	border-radius: 1vw;
 	overflow: hidden;
-	max-width: 360px;
+	width: 360px;
+	max-width: 100%;
 	box-shadow: -0.5vw 0.5vw 1vw rgba(0, 63, 93, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5); }
 	.b-aside-card img {
+		display: block;
+		max-width: 100%; }
+
+.b-aside-card-thumbs {
+	margin-bottom: 20px;
+	margin-left: -6px; }
+
+.b-aside-card-thumbs > a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 10px 6px;
+	padding: 3px;
+	border-radius: 0.3vw;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s; }
+	.b-aside-card-thumbs > a:hover {
+		background-color: #f56322; }
+	.b-aside-card-thumbs > a.active {
+		background-color: #f6743a;
+		cursor: default; }
+
+.b-aside-card-thumb {
+	display: block;
+	border-radius: 0.2vw;
+	overflow: hidden;
+	max-width: 70px; }
+	.b-aside-card-thumb img {
 		display: block;
 		max-width: 100%; }
 
@@ -2607,7 +2639,6 @@ a.card {
 
 .card-title {
 	font-size: 22px;
-	padding-top: 1rem;
 	padding-bottom: 1rem; }
 
 .card-ico {
@@ -3037,7 +3068,8 @@ a.card {
 	.choices * {
 		box-sizing: border-box; }
 	.choices .choices__inner {
-		min-height: 50px; }
+		min-height: 50px;
+		text-transform: lowercase; }
 	.choices.is-open {
 		z-index: 40;
 		position: relative; }
@@ -3058,8 +3090,12 @@ a.card {
 		font-size: 18px;
 		line-height: 28px;
 		font-weight: 400; }
+		.choices .choices__list--single:first-letter {
+			text-transform: capitalize; }
 	.choices .choices__list--dropdown .choices__item--selectable {
 		padding: 10px; }
+		.choices .choices__list--dropdown .choices__item--selectable:first-letter {
+			text-transform: capitalize; }
 	.choices[data-type*=select-one]:after {
 		background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iaWNvLWRvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDUwIDUwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48cGF0aCBmaWxsPSJub25lIiBkPSJNMCAwaDUwdjUwSDB6Ij48L3BhdGg+PHBhdGggZD0iTTQ3LjI1IDE1bC0yLjA4Ni0yLjA4NkwyNSAzMy4wNzggNC44MzYgMTIuOTE0IDIuNzUgMTUgMjUgMzcuMjUiPjwvcGF0aD48L3N2Zz4=);
 		border: 0;
@@ -4257,7 +4293,7 @@ h3 + .tabs {
 	position: relative;
 	font-size: 18px;
 	max-width: 66%;
-	text-shadow: 0 0 1px  #fff, 0 0 5px  #fff; }
+	text-shadow: 0 0 1px  #fff, 0 0 5px  #fff; }
 	.b-offer-details ul {
 		color: #666;
 		padding-left: 20px;
@@ -4298,6 +4334,25 @@ h3 + .tabs {
 		font-weight: 400;
 		transition: color 0.2s;
 		text-decoration: none; }
+	.b-card .b-card-labels {
+		position: absolute;
+		left: 1px;
+		top: 1px;
+		width: 100%;
+		pointer-events: none;
+		z-index: 1; }
+		.b-card .b-card-labels span {
+			font-size: 14px;
+			display: block;
+			background-color: #999;
+			color: #fff;
+			padding: 3px 5px;
+			z-index: 1;
+			text-transform: uppercase;
+			float: left;
+			margin-right: 1px; }
+			.b-card .b-card-labels span.is-premium {
+				background-color: #d62121; }
 
 .b-card--special {
 	color: #fff;
@@ -4739,7 +4794,7 @@ h3 + .tabs {
 	position: relative;
 	font-size: 18px;
 	max-width: 66%;
-	text-shadow: 0 0 1px  #fff, 0 0 5px  #fff; }
+	text-shadow: 0 0 1px  #fff, 0 0 5px  #fff; }
 	.b-categ-details ul {
 		color: #666;
 		padding-left: 20px;
@@ -5388,6 +5443,24 @@ dd {
 			margin: 0 auto; }
 	.holding-card .card-node {
 		padding: 40px; }
+
+.bx-ie11 .holding-card {
+	text-align: center; }
+	.bx-ie11 .holding-card .card-node:first-child {
+		box-sizing: border-box;
+		display: block;
+		align-items: center;
+		padding-bottom: 20px;
+		height: 180px; }
+		.bx-ie11 .holding-card .card-node:first-child img {
+			margin: 0 auto;
+			max-width: 100%;
+			max-height: 100%;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%); }
+	.bx-ie11 .holding-card .card-node {
+		padding: 30px; }
 
 .holding-name {
 	font-size: 20px;

@@ -1929,3 +1929,26 @@ function partnersFilter() {
 		}
 	}
 }
+
+$(document).ready(function () {
+	var toggleCard = function ($container, $card, $thumb) {
+		var activeClass = 'active';
+		$thumb.on('click', function () {
+			var $thisThumb = $(this);
+
+			$thumb.removeClass(activeClass);
+			$thisThumb.addClass(activeClass);
+
+			var src = $('img', $thisThumb).attr('src');
+			$('img', $card).attr('src', src);
+
+			var srcset = $('source', $thisThumb).attr('srcset');
+			$('source', $card).attr('srcset', srcset);
+		});
+	};
+
+	if ($('.b-aside-card-group').length) {
+		var $container = $(this);
+		toggleCard($container, $container.find('.b-aside-card'), $container.find('.b-aside-card-thumbs').find('a'));
+	}
+});
