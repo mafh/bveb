@@ -4380,7 +4380,8 @@ h3 + .tabs {
 			border-color: #f6743a; }
 
 .b-card-node {
-	flex: 0 1 auto;
+	/*flex: 0 1 auto;*/
+	flex: 1 1 auto;
 	padding: 40px;
 	box-sizing: border-box; }
 	.b-card-node:first-child {
@@ -4391,7 +4392,8 @@ h3 + .tabs {
 		overflow: hidden; }
 	.b-card-node:last-child {
 		flex: 1 1 60%;
-		max-width: 60%; }
+		max-width: 60%;
+		min-width: 60%; }
 
 .b-card-img {
 	padding-right: 20px; }

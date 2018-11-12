@@ -5292,7 +5292,8 @@ h3 + .tabs {
 }
 
 .b-card-node {
-	flex: 0 1 auto;
+	/*flex: 0 1 auto;*/
+	flex: 1 1 auto;
 	padding: 40px;
 	box-sizing: border-box;
 
@@ -5308,6 +5309,7 @@ h3 + .tabs {
 	&:last-child {
 		flex: 1 1 60%;
 		max-width: 60%;
+		min-width: 60%;
 	}
 }
 
