@@ -212,7 +212,7 @@ var Gain = {
 
 	set: function(isGained) {
 
-		console.log('set gained '+ isGained);
+		// console.log('set gained '+ isGained);
 
 		if (isGained) {
 
@@ -1933,22 +1933,27 @@ function partnersFilter() {
 $(document).ready(function () {
 	var toggleCard = function ($container, $card, $thumb) {
 		var activeClass = 'active';
-		$thumb.on('click', function () {
-			var $thisThumb = $(this);
+		$thumb.on('click', function (e) {
+			var $thisThumb = $(this),
+				$curContainer = $thisThumb.closest($container);
 
-			$thumb.removeClass(activeClass);
+			$curContainer.find($thumb).removeClass(activeClass);
 			$thisThumb.addClass(activeClass);
 
 			var src = $('img', $thisThumb).attr('src');
-			$('img', $card).attr('src', src);
+			$curContainer.find($card).find('img').attr('src', src);
 
-			var srcset = $('source', $thisThumb).attr('srcset');
-			$('source', $card).attr('srcset', srcset);
+			e.preventDefault();
 		});
 	};
 
-	if ($('.b-aside-card-group').length) {
-		var $container = $(this);
-		toggleCard($container, $container.find('.b-aside-card'), $container.find('.b-aside-card-thumbs').find('a'));
+	var $asideCardGroup = $('.b-aside-card-group');
+	if ($asideCardGroup.length) {
+		toggleCard($asideCardGroup, $asideCardGroup.find('.b-aside-card'), $asideCardGroup.find('.b-aside-card-thumbs').find('a'));
+	}
+
+	var $cardShapeGroup = $('.b-card-shape-group');
+	if ($cardShapeGroup.length) {
+		toggleCard($cardShapeGroup, $cardShapeGroup.find('.b-card-shape'), $cardShapeGroup.find('.b-card-shape-thumbs').find('a'));
 	}
 });

@@ -745,30 +745,38 @@
 		}
 	}
 
-	.b-card {
-		.b-card-descr {
-			order: 0;
-			flex: 0 0 70%;
-			padding-left: 40px;
-		}
+	.b-card{
+		padding: 0;
+	}
+
+	.b-card-descr {
+		float: none;
+		width: auto;
+		min-width: 0;
+		padding-left: 40px;
 	}
 
 	.b-card-img {
-		order: 1;
-		flex: 0 1 auto;
+		//order: 1;
+		//flex: 0 1 auto;
 
-		.b-card-shape {
-			position: absolute;
-			width: 50%;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 100%;
-		}
+		float: none;
+		width: auto;
+		max-width: none;
+		padding: 0 40px 1.2rem;
+
+		//.b-card-shape {
+		//	position: absolute;
+		//	width: 50%;
+		//	top: 50%;
+		//	transform: translateY(-50%);
+		//	width: 100%;
+		//}
 	}
 
-	.b-card-flist {
-		width: 200%;
-	}
+	//.b-card-flist {
+	//	width: 200%;
+	//}
 
 	.b-aside {
 		display: none;
@@ -828,7 +836,6 @@
 	}
 
 }
-
 
 @media only screen and (min-width: 640px) {
 	.show-640 {
@@ -1062,7 +1069,7 @@
 	}
 
 	.o-legend-item {
-		@inclide clr;
+		//@include clr;
 		width: auto;
 		max-width: none;
 		font-size: 18px;
@@ -1122,6 +1129,24 @@
 
 	.b-offer {
 		padding: 40px;
+	}
+
+	.b-card{
+		padding: 2rem 1rem;
+	}
+
+	.b-card-labels + div{
+		margin-top: 1rem;
+	}
+
+	.b-card-descr, .b-card-img {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
+	}
+
+	.b-card-details{
+		padding-bottom: 0;
 	}
 }
 
@@ -1248,31 +1273,30 @@
 		width: 100%;
 	}
 
-	.b-card {
-		flex-direction: column;
+	//.b-card {
+	//	flex-direction: column;
+	//
+	//	.b-card-node {
+	//		order: 0;
+	//		max-width: none;
+	//	}
+	//
+	//	.b-card-descr {
+	//		flex: 1 1 100%;
+	//	}
+	//
+	//	.b-card-img {
+	//		flex: 1 1 100%;
+	//		padding: 20px 20px 0;
+	//	}
+	//}
 
-		.b-card-node {
-			order: 0;
-			max-width: none;
-		}
-
-		.b-card-descr {
-			flex: 1 1 100%;
-		}
-
-		.b-card-img {
-			flex: 1 1 100%;
-			padding: 20px 20px 0;
-		}
-	}
-
-
-	.b-card-img .b-card-shape {
-		position: relative;
-		transform: translateY(0);
-		width: 100%;
-		margin: 0 auto;
-	}
+	//.b-card-img .b-card-shape {
+	//	position: relative;
+	//	transform: translateY(0);
+	//	width: 100%;
+	//	margin: 0 auto;
+	//}
 
 	.b-card-flist {
 		flex-direction: column;

@@ -1048,4 +1048,14 @@
 		}
 	}
 
+	.b-card .b-card-labels span.is-premium{
+		background-color: #000;
+		color: #fff;
+	}
+
+	.b-aside-card-thumbs > a:hover, .b-card-shape-thumbs > a:hover,
+	.b-aside-card-thumbs > a.active, .b-card-shape-thumbs > a.active {
+		background-color: #000;
+	}
+
 }
