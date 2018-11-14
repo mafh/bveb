@@ -5899,6 +5899,20 @@ span.flatpickr-weekday {
 	opacity: 0;
 	transition: opacity 0.3s; }
 
+.btns {
+	overflow: hidden; }
+
+.btns__holder {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -0.5rem 0; }
+
+.btns__col {
+	padding: 1rem 0.5rem 0;
+	flex-shrink: 1; }
+	.btns__col .button {
+		padding: 0 1rem; }
+
 body.popup-is-visible {
 	overflow: hidden; }
 
@@ -6759,5 +6773,12 @@ html.csstransforms .popup-is-visible .popup {
 		font-size: 16px; }
 		.rates-table td:nth-child(2) {
 			padding-right: 10px; } }
+
+@media only screen and (max-width: 420px) {
+	.btns__holder {
+		display: block; }
+	.btns__col .button {
+		display: block;
+		text-align: center; } }
 
 /*# sourceMappingURL=maps/common.css.map */

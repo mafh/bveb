@@ -1324,3 +1324,15 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 420px) {
+	.btns__holder{
+		display: block;
+	}
+	.btns__col{
+		.button {
+			display: block;
+			text-align: center;
+		}
+	}
+}

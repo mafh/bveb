@@ -7557,3 +7557,21 @@ span.flatpickr-weekday {
 	opacity: 0;
 	transition: opacity 0.3s;
 }
+
+.btns {
+	overflow: hidden;
+}
+.btns__holder {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -0.5rem 0;
+}
+.btns__col{
+	padding: 1rem 0.5rem 0;
+	//flex-grow: 1;
+	flex-shrink: 1;
+
+	.button {
+		padding: 0 1rem;
+	}
+}
