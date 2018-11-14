@@ -1930,23 +1930,23 @@ function partnersFilter() {
 	}
 }
 
-$(document).ready(function () {
-	var toggleCard = function ($container, $card, $thumb) {
-		var activeClass = 'active';
-		$thumb.on('click', function (e) {
-			var $thisThumb = $(this),
-				$curContainer = $thisThumb.closest($container);
+function toggleCard ($container, $card, $thumb) {
+	var activeClass = 'active';
+	$thumb.on('click', function (e) {
+		var $thisThumb = $(this),
+			$curContainer = $thisThumb.closest($container);
 
-			$curContainer.find($thumb).removeClass(activeClass);
-			$thisThumb.addClass(activeClass);
+		$curContainer.find($thumb).removeClass(activeClass);
+		$thisThumb.addClass(activeClass);
 
-			var src = $('img', $thisThumb).attr('src');
-			$curContainer.find($card).find('img').attr('src', src);
+		var src = $('img', $thisThumb).attr('src');
+		$curContainer.find($card).find('img').attr('src', src);
 
-			e.preventDefault();
-		});
-	};
+		e.preventDefault();
+	});
+}
 
+function cardsSlider() {
 	var $asideCardGroup = $('.b-aside-card-group');
 	if ($asideCardGroup.length) {
 		toggleCard($asideCardGroup, $asideCardGroup.find('.b-aside-card'), $asideCardGroup.find('.b-aside-card-thumbs').find('a'));
@@ -1956,4 +1956,8 @@ $(document).ready(function () {
 	if ($cardShapeGroup.length) {
 		toggleCard($cardShapeGroup, $cardShapeGroup.find('.b-card-shape'), $cardShapeGroup.find('.b-card-shape-thumbs').find('a'));
 	}
+}
+
+$(document).ready(function () {
+	cardsSlider();
 });
