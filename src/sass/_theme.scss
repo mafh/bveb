@@ -7,124 +7,326 @@ $base-color-active: #13b3e9 !default;
 $text-color: #2f444e !default;
 $bg-color-alt: #f6f6f6 !default;
 
-a:hover {
-	color: $base-color;
-}
-
-.promo-slider,
-.card-promo,
-.banner-visual {
-	.button {
-		background-color: $base-color;
-
-		&:hover {
-			background-color: $base-color-active;
-		}
-	}
-}
-
-.promo-slider .swiper-slide {
-	.promo-text, .promo-img {
-		//background: $text-color;
-		background: $main-color;
-	}
-}
-
-.swiper-pagination-bullet-active {
-	background-color: $base-color;
-}
-
-.topmenu-link {
-	&.active, &.topmenu-link--active {
-		background-color: $base-color;
-	}
-}
-
-.currency-node {
-	&:before {
-		background-color: $base-color;
-	}
-}
-
-.currency-toggle {
-	&.active {
-		background-color: $base-color;
-	}
-}
-
-.topmenu-link:hover {
-	color: $base-color;
-	border-color: currentColor;
-}
-
-.currency-full .cf-footer a {
-	color: rgba(white, 0.7);
-
-	&:hover {
-		text-decoration: none;
-	}
-}
-
-.sitemap-note {
-	background: $bg-color-alt;
-}
-
-.bg--gradient {
-	background-image: none;
-	background-color: $base-color-light;
-}
-
-.l-popular .popular-col:first-child .box{
-	background-color: $main-color;
-}
-
-.card-ico {
-	&::before {
-		background-color: $base-color;
-	}
-
-	svg {
-		fill: $base-color
-	}
-}
-
-.box.box-shadow {
-	&:hover {
+.theme_1 {
+	a:hover {
 		color: $base-color;
 	}
-}
 
-.tag {
-	&:active {
-		border-color: $base-color;
+	.promo-slider,
+	.card-promo,
+	.banner-visual {
+		.button {
+			background-color: $base-color;
+
+			&:hover {
+				background-color: $base-color-active;
+				color: white;
+			}
+		}
+	}
+
+	.promo-slider .swiper-slide {
+		.promo-text, .promo-img {
+			//background: $text-color;
+			background: $main-color;
+		}
+	}
+
+	.swiper-pagination-bullet-active {
 		background-color: $base-color;
 	}
-}
 
-.t-block .t-control:hover .c-ico {
-	border-color: rgba($base-color, 0.5);
-}
+	.topmenu-link {
+		&:hover {
+			color: $base-color;
+			border-color: $base-color;
+		}
 
-.hash-link:hover {
-	border-color: rgba($base-color, 0.3);
-}
+		&.active, &.topmenu-link--active {
+			background-color: $base-color;
+			color: white;
+		}
+	}
 
-.c-ico {
-	&.ico--orange {
+	.currency-node {
+		&:before {
+			background-color: $base-color;
+		}
+	}
+
+	.currency-toggle {
+		&.active {
+			background-color: $base-color;
+		}
+	}
+
+	.currency-full .cf-footer a {
+		color: rgba(white, 0.7);
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.sitemap-note {
+		background: $bg-color-alt;
+	}
+
+	.bg--gradient {
+		background-image: none;
+		background-color: $base-color-light;
+	}
+
+	a.box.box-shadow {
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.l-products-top .products-col:first-child a.box,
+	.l-popular .popular-col:first-child a.box {
+		background-color: $main-color;
+
+		&:hover {
+			color: white;
+		}
+	}
+
+	.card-ico {
+		&::before {
+			background-color: $base-color;
+		}
+
+		svg {
+			fill: $base-color
+		}
+	}
+
+	.tag {
+		&:active {
+			border-color: $base-color;
+			background-color: $base-color;
+		}
+	}
+
+	.t-block .t-control:hover .c-ico {
 		border-color: rgba($base-color, 0.5);
+	}
 
-		svg, img {
-			fill: $base-color;
+	.hash-link:hover {
+		border-color: rgba($base-color, 0.3);
+	}
+
+	.c-ico {
+		&.ico--orange {
+			border-color: rgba($base-color, 0.5);
+
+			svg, img {
+				fill: $base-color;
+			}
+		}
+	}
+
+	a.ico-link {
+		&:hover {
+			.c-ico {
+				border-color: $base-color;
+				-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+				box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+			}
 		}
 	}
 }
 
-a.ico-link {
-	&:hover {
-		.c-ico {
+///*=================*/
+///*theme 2*/
+///*=================*/
+$main-color: #006e93;
+$base-color: #008fd5;
+$base-color-light: #caecff;
+$base-color-active: #13b3e9;
+$text-color: #2f444e;
+$bg-color-alt: #ddd;
+$border-color: #ccc;
+
+.theme_2 {
+	a:hover {
+		color: $base-color;
+	}
+
+	.promo-slider,
+	.card-promo,
+	.banner-visual {
+		.button {
+			background-color: $base-color;
+
+			&:hover {
+				background-color: $base-color-active;
+				color: white;
+			}
+		}
+	}
+
+	.h-currency {
+		background-color: #f3f3f3;
+		color: $text-color;
+		border-bottom: 1px solid $border-color;
+		box-sizing: border-box;
+
+		.link--white {
+			color: $text-color;
+
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+
+	.currency-node {
+		&:before {
+			background-color: $base-color;
+			color: white;
+		}
+	}
+
+	.promo-slider .swiper-slide {
+		border: 1px solid $border-color;
+
+		.promo-text, .promo-img {
+			background: $bg-color-alt;
+			color: $text-color;
+		}
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: $base-color;
+	}
+
+	.topmenu-link {
+		&:hover {
+			color: $base-color;
 			border-color: $base-color;
-			-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
-			box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+		}
+
+		&.active, &.topmenu-link--active {
+			background-color: $base-color;
+			color: white;
+		}
+	}
+
+	.currency-toggle {
+		&.active {
+			background-color: $base-color;
+		}
+	}
+
+	.currency-full .cf-footer a {
+		color: rgba(white, 0.7);
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.sitemap-note {
+		background: $bg-color-alt;
+	}
+
+	.bg--gradient {
+		background: #e6edf1;
+		//border: solid $border-color;
+		border-width: 1px 0;
+	}
+
+	a.box.box-shadow {
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.l-products-top .products-col:first-child a.box,
+	.l-popular .popular-col:first-child a.box,
+	.l-news-row .news-col.news-col-lead .box{
+		background-color: $bg-color-alt;
+		color: $text-color;
+		border: 1px solid $border-color;
+		transition: color 0.2s;
+
+		&:hover {
+			color: $base-color;
+			//border-color: rgba($base-color, 0.3);
+		}
+	}
+
+	.readmore {
+		color: $text-color;
+
+		&.color--white .c-ico {
+			border-color: rgba($text-color, 0.3);
+		}
+
+		&.color--white svg {
+			fill: $text-color;
+		}
+	}
+
+	.card:hover {
+		.readmore,
+		.readmore:hover {
+			color: $base-color;
+
+			&.color--white .c-ico {
+				border-color: rgba($base-color, 0.3);
+			}
+
+			&.color--white svg {
+				fill: $base-color;
+			}
+		}
+	}
+
+	.card-ico {
+		&::before {
+			background-color: $base-color;
+		}
+
+		svg {
+			fill: $base-color
+		}
+	}
+
+	.tag {
+		&:active {
+			border-color: $base-color;
+			background-color: $base-color;
+		}
+	}
+
+	.t-block .t-control:hover .c-ico {
+		border-color: rgba($base-color, 0.5);
+	}
+
+	.hash-link:hover {
+		border-color: rgba($base-color, 0.3);
+	}
+
+	.c-ico {
+		&.ico--orange {
+			border-color: rgba($base-color, 0.5);
+
+			svg, img {
+				fill: $base-color;
+			}
+		}
+	}
+
+	a.ico-link {
+		&:hover {
+			.c-ico {
+				border-color: $base-color;
+				-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+				box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+			}
 		}
 	}
 }
