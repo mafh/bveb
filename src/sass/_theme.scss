@@ -167,6 +167,15 @@ $border-color: #ccc;
 		}
 	}
 
+	.promo-slider .swiper-slide {
+		border: 1px solid $border-color;
+
+		.promo-text, .promo-img {
+			background: $bg-color-alt;
+			color: $text-color;
+		}
+	}
+
 	.h-currency {
 		background-color: #f3f3f3;
 		color: $text-color;
@@ -186,15 +195,6 @@ $border-color: #ccc;
 		&:before {
 			background-color: $base-color;
 			color: white;
-		}
-	}
-
-	.promo-slider .swiper-slide {
-		border: 1px solid $border-color;
-
-		.promo-text, .promo-img {
-			background: $bg-color-alt;
-			color: $text-color;
 		}
 	}
 
@@ -284,6 +284,328 @@ $border-color: #ccc;
 			}
 		}
 	}
+
+	.card-ico {
+		&::before {
+			background-color: $base-color;
+		}
+
+		svg {
+			fill: $base-color
+		}
+	}
+
+	.tag {
+		&:active {
+			border-color: $base-color;
+			background-color: $base-color;
+		}
+	}
+
+	.t-block .t-control:hover .c-ico {
+		border-color: rgba($base-color, 0.5);
+	}
+
+	.hash-link:hover {
+		border-color: rgba($base-color, 0.3);
+	}
+
+	.c-ico {
+		&.ico--orange {
+			border-color: rgba($base-color, 0.5);
+
+			svg, img {
+				fill: $base-color;
+			}
+		}
+	}
+
+	a.ico-link {
+		&:hover {
+			.c-ico {
+				border-color: $base-color;
+				-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+				box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+			}
+		}
+	}
+}
+
+///*=================*/
+///*theme 3*/
+///*=================*/
+$main-color: #006e93;
+$base-color: #008fd5;
+$base-color-dark: #0171c1;
+$base-color-light: #caecff;
+$base-color-active: #13b3e9;
+$text-color: #2f444e;
+$bg-color-alt: #f6f6f6;
+$bg-grad: #f1f1f1, #fff;
+$border-color: #e1e1e1;
+
+@mixin section-grad($direct: 180deg) {
+	background: linear-gradient($direct, #{nth($bg-grad, 1)} 0, #{nth($bg-grad, 2)} 200px);
+}
+
+.theme_3 {
+	a {
+		color: $base-color;
+
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.h-currency {
+		background-color: $bg-color-alt;
+		//@include section-grad(0);
+		color: $text-color;
+		//border-bottom: 1px solid $border-color;
+		box-sizing: border-box;
+
+		.link--white {
+			color: $text-color;
+
+			&:hover {
+				color: $base-color;
+			}
+		}
+	}
+
+	.currency-full {
+		color: white;
+		background-color: $base-color;
+
+		.cf-footer a {
+			color: rgba(white, 0.7);
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.currency-node {
+		&:before {
+			background-color: $base-color;
+			color: white;
+		}
+	}
+	.currency-toggle {
+		&.active {
+			background-color: $base-color;
+		}
+	}
+
+	.topline-menu > li > a:hover {
+		color: $base-color;
+	}
+
+	.toplink-schedule:hover svg {
+		fill: $base-color;
+	}
+
+	.link-iblogin {
+		color: $text-color;
+	}
+
+	.topline-lang > a {
+		color: $text-color;
+
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.link-iblogin,
+	.topline-search,
+	.topline-gain {
+		&:hover, a:hover {
+			svg {
+				fill: $base-color;
+				stroke: $base-color;
+			}
+		}
+	}
+
+	.topmenu-link {
+		&:hover {
+			color: $base-color;
+			border-color: $base-color;
+		}
+
+		&.active, &.topmenu-link--active {
+			background-color: $base-color;
+			color: white;
+		}
+	}
+
+	.sitemap-note {
+		background: $bg-color-alt;
+	}
+
+	.sitemap-main li a {
+		color: $base-color;
+	}
+
+	.nav-toggle:hover {
+		.nav-toggle-ctrl {
+			border-color: rgba($base-color, 0.5);
+
+			svg {
+				fill: $base-color
+			}
+		}
+	}
+
+	.nav-list a:hover {
+		color: $base-color;
+	}
+
+	.nav-list > li > ul > li > a:hover:after {
+		border-color: $base-color;
+	}
+
+	.promo-slider,
+	.card-promo,
+	.banner-visual {
+		.button {
+			background-color: $base-color;
+			color: white;
+
+			&:hover {
+				background-color: $base-color-active;
+				color: white;
+			}
+		}
+	}
+
+	.promo-slider {
+		//@include section-grad();
+		background-color: white;
+
+		.swiper-slide {
+			//border: 1px solid $border-color;
+
+			.promo-text, .promo-img {
+				//background: $base-color;
+				//background: -webkit-gradient(left top, right bottom, color-stop(0, $base-color), color-stop(8%, $base-color), color-stop(73%, $base-color-dark), color-stop(100%, $base-color-dark));
+				//background: linear-gradient(135deg, $base-color, $base-color 8%, $base-color-dark 73%, $base-color-dark);
+				background: $bg-color-alt;
+				//color: white;
+				color: $text-color;
+				border: 1px solid $border-color;
+			}
+
+			.promo-img > img {
+				width: 100%;
+			}
+		}
+
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: $base-color;
+	}
+
+	.bg--gradient, .l-products-top {
+		//background: #e6edf1;
+		@include section-grad();
+		border-width: 1px 0;
+	}
+
+	a.box.box-shadow {
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	.l-products-top .products-col:first-child a.box,
+	.l-popular .popular-col:first-child a.box,
+	.l-news-row .news-col.news-col-lead .box {
+		//background-color: $bg-color-alt;
+		//background-color: transparent;
+		//border: 6px solid $base-color;
+		//color: $text-color;
+		color: white;
+		transition: color, box-shadow 0.2s;
+
+		background: $base-color;
+		background: -webkit-gradient(left top, right bottom, color-stop(0, $base-color), color-stop(8%, $base-color), color-stop(73%, $base-color-dark), color-stop(100%, $base-color-dark));
+		background: linear-gradient(135deg, $base-color, $base-color 8%, $base-color-dark 73%, $base-color-dark);
+
+		&:hover {
+			//color: $base-color;
+			color: white;
+			//border-color: rgba($base-color, 0.3);
+		}
+	}
+
+	.l-popular a.box,
+	.l-products-top a.box {
+		box-shadow: none;
+		border: 1px solid $border-color;
+		transition: box-shadow 0.2s;
+
+		&:hover {
+			-webkit-box-shadow: 0 10px 13px rgba(0, 63, 93, 0.08), 0 0 40px rgba(0, 63, 93, 0.08);
+			box-shadow: 0 10px 13px rgba(0, 63, 93, 0.08), 0 0 40px rgba(0, 63, 93, 0.08);
+		}
+	}
+
+	.readmore {
+		//color: $text-color;
+		color: white;
+
+		&.color--white .c-ico {
+			//border-color: rgba($text-color, 0.3);
+			border-color: rgba(white, 0.3);
+
+			&::before {
+				background-color: $base-color;
+			}
+		}
+
+		&.color--white svg {
+			//fill: $text-color;
+			fill: white;
+		}
+	}
+
+	.card:hover {
+		.readmore,
+		.readmore:hover {
+			//color: $base-color;
+			color: white;
+
+			&.color--white .c-ico {
+				//border-color: rgba($base-color, 0.3);
+				border-color: rgba(white, 0.3);
+			}
+
+			&.color--white svg {
+				//fill: $base-color;
+				fill: white;
+			}
+		}
+	}
+
+	//.l-news-row .news-col.news-col-lead .box {
+	//	&:hover {
+	//		.readmore {
+	//			&.color--white svg {
+	//				fill: $base-color;
+	//			}
+	//		}
+	//	}
+	//
+	//	.readmore:hover {
+	//		&.color--white svg {
+	//			fill: white;
+	//		}
+	//	}
+	//}
 
 	.card-ico {
 		&::before {
