@@ -835,6 +835,13 @@
 		}
 	}
 
+	.c-aside {
+		position: relative;
+		right: auto;
+		top: auto;
+		padding: 20px 20px 0;
+	}
+
 }
 
 @media only screen and (min-width: 640px) {
@@ -1322,6 +1329,10 @@
 				padding-right: 10px;
 			}
 		}
+	}
+
+	.c-aside {
+		padding: 10px 10px 0;
 	}
 }
 

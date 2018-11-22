@@ -2433,6 +2433,13 @@ a.card:hover .readmore svg {
 	position: relative;
 	z-index: 1; }
 
+.c-aside {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 90px 40px 0 0;
+	z-index: 1; }
+
 .b-aside-card-group, .b-card-shape-group {
 	margin-bottom: 20px; }
 	.b-aside-card-group:last-child, .b-card-shape-group:last-child {
@@ -6501,7 +6508,12 @@ html.csstransforms .popup-is-visible .popup {
 			height: 100px; }
 			.o-legend-item .c-ico svg {
 				width: 50px;
-				height: 50px; } }
+				height: 50px; }
+	.c-aside {
+		position: relative;
+		right: auto;
+		top: auto;
+		padding: 20px 20px 0; } }
 
 @media only screen and (min-width: 640px) {
 	.show-640 {
@@ -6771,7 +6783,9 @@ html.csstransforms .popup-is-visible .popup {
 	.rates-table td {
 		font-size: 16px; }
 		.rates-table td:nth-child(2) {
-			padding-right: 10px; } }
+			padding-right: 10px; }
+	.c-aside {
+		padding: 10px 10px 0; } }
 
 @media only screen and (max-width: 420px) {
 	.btns__holder {
