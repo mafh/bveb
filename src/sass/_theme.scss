@@ -2,7 +2,8 @@
 
 $main-color: #006e93 !default;
 $base-color: #008fd5 !default;
-$base-color-light: #caecff !default;
+//$base-color-light: #caecff !default;
+$base-color-light: #e6edf1 !default;
 $base-color-active: #13b3e9 !default;
 $text-color: #2f444e !default;
 $bg-color-alt: #f6f6f6 !default;
@@ -83,12 +84,79 @@ $bg-color-alt: #f6f6f6 !default;
 		}
 	}
 
-	.l-products-top .products-col:first-child a.box,
-	.l-popular .popular-col:first-child a.box {
-		background-color: $main-color;
+	.readmore{
+		color: $text-color;
+
+		&.color--white .c-ico {
+			border-color: rgba($text-color, 0.3);
+
+			&::before {
+				background-color: $base-color;
+			}
+		}
+
+		&.color--white svg {
+			fill: $text-color;
+		}
 
 		&:hover {
-			color: white;
+			color: $base-color;
+			border-color: white;
+
+			&.color--white .c-ico {
+				border-color: white;
+			}
+
+			&.color--white svg {
+				fill: white;
+			}
+		}
+	}
+
+	.l-products-top .products-col:first-child a.box,
+	.l-popular .popular-col:first-child a.box,
+	.l-news-row .news-col.news-col-lead .box{
+		background-color: white;
+		border: 6px solid $main-color;
+		color: $text-color;
+	}
+
+	.l-products-top .products-col:first-child a.box,
+	.l-popular .popular-col:first-child a.box{
+		-webkit-transition-property: color, border-color, box-shadow;
+		transition-property: color, border-color, box-shadow;
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+
+		&:hover {
+			color: $base-color;
+			border-color: $base-color;
+
+			.readmore {
+				color: $base-color;
+
+				&.color--white .c-ico {
+					border-color: white;
+				}
+
+				&.color--white svg {
+					fill: white;
+				}
+			}
+		}
+
+		//.readmore,
+		.readmore:hover {
+			color: $base-color;
+			border-color: $base-color;
+
+			&.color--white .c-ico {
+				border-color: white;
+			}
+
+			&.color--white svg {
+				fill: white;
+			}
 		}
 	}
 
@@ -149,7 +217,7 @@ $text-color: #2f444e;
 $bg-color-alt: #ddd;
 $border-color: #ccc;
 
-.theme_2 {
+.theme_2___hide {
 	a:hover {
 		color: $base-color;
 	}
@@ -348,7 +416,7 @@ $border-color: #e1e1e1;
 	background: linear-gradient($direct, #{nth($bg-grad, 1)} 0, #{nth($bg-grad, 2)} 200px);
 }
 
-.theme_3 {
+.theme_3___hide {
 	a {
 		color: $base-color;
 
