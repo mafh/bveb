@@ -8,253 +8,375 @@ $base-color-active: #13b3e9 !default;
 $text-color: #2f444e !default;
 $bg-color-alt: #f6f6f6 !default;
 
-.theme_1 {
-	a {
-		&:hover {
-			color: $base-color;
-		}
-	}
-
-	a[href^="tel:"] {
-		&:hover {
-			color: $base-color;
-		}
-	}
-
-	.currency-node {
-		&:before {
-			background-color: $base-color;
-			color: white;
-		}
-	}
-	.currency-toggle {
-		&.active {
-			background-color: $base-color;
-		}
-	}
-
-	.topline-menu > li > a:hover {
+//.theme_1 {
+/* new theme */
+a {
+	&:hover {
 		color: $base-color;
 	}
+}
 
-	.toplink-schedule:hover svg {
-		fill: $base-color;
-	}
-
-	.link-iblogin {
-		color: $text-color;
-	}
-
-	.topline-lang > a {
-		color: $text-color;
-
-		&:hover {
-			color: $base-color;
-		}
-	}
-
-	.link-iblogin,
-	.topline-search,
-	.topline-gain {
-		&:hover, a:hover {
-			svg {
-				fill: $base-color;
-				stroke: $base-color;
-			}
-		}
-	}
-
-	.topmenu-link {
-		&:hover {
-			color: $base-color;
-			border-color: $base-color;
-		}
-
-		&.active, &.topmenu-link--active {
-			background-color: $base-color;
-			color: white;
-		}
-	}
-
-	.sitemap-note {
-		background: $bg-color-alt;
-	}
-
-	.sitemap-main li a {
+a[href^="tel:"] {
+	&:hover {
 		color: $base-color;
 	}
+}
 
-	.nav-toggle:hover {
-		.nav-toggle-ctrl {
-			border-color: rgba($base-color, 0.5);
+.usercontent ol li:before {
+	color: $base-color;
+	border-color: $base-color;
+}
 
-			svg {
-				fill: $base-color
-			}
-		}
+blockquote {
+	border-color: $base-color;
+}
+
+.sq-docs .doc-node:hover {
+	color: $base-color;
+	border-color: $base-color;
+
+	&::before {
+		background-color: $base-color;
 	}
+}
 
-	.nav-list a:hover {
+.currency-node {
+	&:before {
+		background-color: $base-color;
+		color: white;
+	}
+}
+.currency-toggle {
+	&.active {
+		background-color: $base-color;
+	}
+}
+
+.topline-menu > li > a:hover {
+	color: $base-color;
+}
+
+.toplink-schedule:hover svg {
+	fill: $base-color;
+}
+
+.link-iblogin {
+	color: $text-color;
+}
+
+.topline-lang > a {
+	color: $text-color;
+
+	&:hover {
 		color: $base-color;
 	}
+}
 
-	.nav-list > li > ul > li > a:hover:after {
+.link-iblogin,
+.topline-search,
+.topline-gain {
+	&:hover, a:hover {
+		svg {
+			fill: $base-color;
+			stroke: $base-color;
+		}
+	}
+}
+
+.topmenu-link {
+	&:hover {
+		color: $base-color;
 		border-color: $base-color;
 	}
 
-	.promo-slider,
-	.card-promo,
-	.banner-visual,
-	.l-footer  {
-		.button {
-			background-color: $base-color;
-
-			&:hover {
-				background-color: $base-color-active;
-				color: white;
-			}
-		}
-	}
-
-	.l-footer  {
-		.button-dashed {
-			background-color: transparent;
-			color: $base-color;
-			border: 1px dashed $base-color;
-
-			&:hover {
-				background-color: $base-color-active;
-				border-color: $base-color-active;
-				color: white;
-			}
-		}
-	}
-
-	.promo-slider .swiper-slide {
-		.promo-text, .promo-img {
-			//background: $text-color;
-			background: $main-color;
-		}
-	}
-
-	.swiper-pagination-bullet-active {
+	&.active, &.topmenu-link--active {
 		background-color: $base-color;
-	}
-
-	.topmenu-link {
-		&:hover {
-			color: $base-color;
-			border-color: $base-color;
-		}
-
-		&.active, &.topmenu-link--active {
-			background-color: $base-color;
-			color: white;
-		}
-	}
-
-	.currency-node {
-		&:before {
-			background-color: $base-color;
-		}
-	}
-
-	.currency-toggle {
-		&.active {
-			background-color: $base-color;
-		}
-	}
-
-	.currency-full .cf-footer a {
-		color: rgba(white, 0.7);
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
-	.sitemap-note {
-		background: $bg-color-alt;
-	}
-
-	.bg--gradient {
-		background-image: none;
-		background-color: $base-color-light;
-	}
-
-	a.box.box-shadow {
-		&:hover {
-			color: $base-color;
-		}
-	}
-
-	.l-products-top .products-col:first-child a.box,
-	.l-popular .popular-col:first-child a.box,
-	.l-news-row .news-col.news-col-lead .box{
-		background-color: $main-color;
 		color: white;
 	}
+}
 
-	.l-products-top .products-col:first-child a.box,
-	.l-popular .popular-col:first-child a.box{
-		-webkit-transition-property: color, border-color, box-shadow;
-		transition-property: color, border-color, box-shadow;
-		-webkit-transition-duration: 0.2s;
-		transition-duration: 0.2s;
+.sitemap-note {
+	background: $bg-color-alt;
+}
 
-		&:hover {
-			color: white;
-		}
-	}
+.sitemap-main li a {
+	color: $base-color;
+}
 
-	.card-ico {
-		&::before {
-			background-color: $base-color;
-		}
+.nav-toggle:hover {
+	.nav-toggle-ctrl {
+		border-color: rgba($base-color, 0.5);
 
 		svg {
 			fill: $base-color
 		}
 	}
+}
 
-	.tag {
-		&:active {
-			border-color: $base-color;
-			background-color: $base-color;
-		}
+.nav-list a:hover {
+	color: $base-color;
+}
+
+.nav-list > li > ul > li > a:hover:after {
+	border-color: $base-color;
+}
+.nav-list li .label-new {
+	color: green;
+}
+
+//.promo-slider,
+//.card-promo,
+//.banner-visual,
+//.l-footer  {
+//	.button {
+//		background-color: $base-color;
+//
+//		&:hover {
+//			background-color: $base-color-active;
+//			color: white;
+//		}
+//	}
+//}
+
+.button {
+	background-color: $base-color;
+
+	&:hover {
+		background-color: $base-color-active;
+		color: white;
+	}
+}
+
+.button-info {
+	color: $base-color;
+	background-color: transparent;
+	border-color: $base-color;
+
+	svg {
+		fill: $base-color
+	}
+}
+
+.table-zoom.active .table-zoom-button {
+	background-color: $base-color;
+}
+
+//.l-footer  {
+//	.button-dashed {
+//		background-color: transparent;
+//		color: $base-color;
+//		border: 1px dashed $base-color;
+//
+//		&:hover {
+//			background-color: $base-color-active;
+//			border-color: $base-color-active;
+//			color: white;
+//		}
+//	}
+//}
+
+.button-dashed {
+	background-color: transparent;
+	color: $base-color;
+	border: 1px dashed $base-color;
+
+	&:hover {
+		background-color: $base-color-active;
+		border-color: $base-color-active;
+		color: white;
+	}
+}
+
+.promo-slider .swiper-slide {
+	.promo-text, .promo-img {
+		//background: $text-color;
+		background: $main-color;
+	}
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+	background-color: $base-color;
+}
+
+.topmenu-link {
+	&:hover {
+		color: $base-color;
+		border-color: $base-color;
 	}
 
-	.t-block .t-control:hover{
-		.c-ico {
-			border-color: rgba($base-color, 0.5);
-		}
+	&.active, &.topmenu-link--active {
+		background-color: $base-color;
+		color: white;
+	}
+}
 
-		svg {
+.currency-node {
+	&:before {
+		background-color: $base-color;
+	}
+}
+
+.currency-toggle {
+	&.active {
+		background-color: $base-color;
+	}
+}
+
+.currency-full .cf-footer a {
+	color: rgba(white, 0.7);
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.sitemap-note {
+	background: $bg-color-alt;
+}
+
+.bg--gradient {
+	background-image: none;
+	background-color: $base-color-light;
+}
+
+a.box.box-shadow {
+	&:hover {
+		color: $base-color;
+	}
+}
+
+.l-products-top .products-col:first-child a.box,
+.l-popular .popular-col:first-child a.box,
+.l-news-row .news-col.news-col-lead .box{
+	background-color: $main-color;
+	color: white;
+}
+
+.l-products-top .products-col:first-child a.box,
+.l-popular .popular-col:first-child a.box{
+	-webkit-transition-property: color, border-color, box-shadow;
+	transition-property: color, border-color, box-shadow;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.card-ico {
+	&::before {
+		background-color: $base-color;
+	}
+
+	svg {
+		fill: $base-color
+	}
+}
+
+.tag {
+	&:active {
+		border-color: $base-color;
+		background-color: $base-color;
+	}
+}
+
+.t-block .t-control:hover{
+	.c-ico {
+		border-color: rgba($base-color, 0.5);
+	}
+
+	svg {
+		fill: $base-color;
+	}
+}
+
+.hash-link:hover {
+	border-color: rgba($base-color, 0.3);
+}
+
+.c-ico {
+	&.ico--orange {
+		border-color: rgba($base-color, 0.5);
+
+		svg, img {
 			fill: $base-color;
 		}
 	}
+}
 
-	.hash-link:hover {
-		border-color: rgba($base-color, 0.3);
-	}
-
-	.c-ico {
-		&.ico--orange {
-			border-color: rgba($base-color, 0.5);
-
-			svg, img {
-				fill: $base-color;
-			}
-		}
-	}
-
-	a.ico-link {
-		&:hover {
-			.c-ico {
-				border-color: $base-color;
-				-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
-				box-shadow: inset 0 0 15px rgba($base-color, 0.5);
-			}
+a.ico-link {
+	&:hover {
+		.c-ico {
+			border-color: $base-color;
+			-webkit-box-shadow: inset 0 0 15px rgba($base-color, 0.5);
+			box-shadow: inset 0 0 15px rgba($base-color, 0.5);
 		}
 	}
 }
+
+.numeric span {
+	color: $base-color;
+}
+
+.faq-q:hover {
+	color: $base-color;
+}
+
+.license-card svg{
+	fill: $base-color
+}
+
+.tabs a.is-active {
+	border-color: $base-color;
+	color: $base-color;
+}
+
+.b-advantages {
+	.ico-link {
+		svg, img {
+			fill: $base-color;
+		}
+	}
+}
+
+.b-aside-card-thumbs, .b-card-shape-thumbs {
+	& > a.active, & > a:hover{
+		background-color: $base-color;
+	}
+}
+
+.link-attention:hover .c-ico{
+	border-color: $base-color;
+}
+
+.input .input-clear:hover {
+	fill: $base-color;
+}
+
+.l-news-row .card-news-date {
+	background-color: $base-color;
+}
+
+.input-range .irs .irs-bar {
+	background-color: $base-color;
+}
+
+.b-offer .labels span.is-new,
+a.card .labels span.is-new {
+	background-color: green;
+}
+
+.b-partner:hover {
+	.b-partner-title{
+		color: $base-color;
+	}
+}
+
+.b-categ:hover {
+	.b-categ-title {
+		color: $base-color;
+	}
+}
+
+//}
