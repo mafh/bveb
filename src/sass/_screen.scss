@@ -2590,8 +2590,58 @@ a.card:hover {
 	//}
 }
 
+/* === rubric-slider === */
 
+.rubric-slider {
+	padding: 0;
+	width: 270px;
 
+	.swiper-container {
+		padding-bottom: 30px;
+	}
+
+	.swiper-is-loading {
+
+		.swiper-wrapper {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.swiper-pagination {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+
+	.swiper-slide {
+		position: relative;
+		border: 1px solid rgba(black, 0.1);
+		box-sizing: border-box;
+
+		.promo-img {
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	.swiper-pagination {
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+	}
+
+	.swiper-pagination-bullet {
+		box-shadow: 0 0 0 1px white;
+	}
+
+	.swiper-pagination-bullet-active {
+		box-shadow: 0 0 0 1px #008fd5;
+	}
+}
+
+/* === rubric-slider end === */
 
 
 

@@ -2607,6 +2607,35 @@ a.card:hover .readmore svg {
 		bottom: 0 !important;
 		padding: 0 !important; }
 
+/* === rubric-slider === */
+.rubric-slider {
+	padding: 0;
+	width: 270px; }
+	.rubric-slider .swiper-container {
+		padding-bottom: 30px; }
+	.rubric-slider .swiper-is-loading .swiper-wrapper {
+		opacity: 0;
+		pointer-events: none; }
+	.rubric-slider .swiper-is-loading .swiper-pagination {
+		opacity: 0;
+		pointer-events: none; }
+	.rubric-slider .swiper-slide {
+		position: relative;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-sizing: border-box; }
+		.rubric-slider .swiper-slide .promo-img img {
+			display: block;
+			width: 100%; }
+	.rubric-slider .swiper-pagination {
+		position: absolute;
+		bottom: 0;
+		padding: 0; }
+	.rubric-slider .swiper-pagination-bullet {
+		box-shadow: 0 0 0 1px white; }
+	.rubric-slider .swiper-pagination-bullet-active {
+		box-shadow: 0 0 0 1px #008fd5; }
+
+/* === rubric-slider end === */
 .box-shadow {
 	box-shadow: 0 10px 13px rgba(0, 63, 93, 0.07); }
 

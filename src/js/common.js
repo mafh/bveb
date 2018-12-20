@@ -254,6 +254,8 @@ $(document).ready(function() {
 
 	promoSlider();
 
+	rubricSlider();
+
 	elemAppear();
 
 	mobmenu();
@@ -996,7 +998,7 @@ function promoSliderSwiper() {
 		swiper.params.slidesOffsetAfter  = deltaAfter;
 
 		swiper.update();
-	}
+	};
 
 	var swiper = new Swiper(swiperContainer, {
 		pagination: {
@@ -1037,6 +1039,40 @@ function promoSliderSwiper() {
 	// });
 
 	swiper.init();
+}
+
+// rubricSlider
+function rubricSlider() {
+	var $slider = $('.js-rubric-slider');
+	if (!oldie && $slider.length > 0) {
+		rubricSliderSwiper();
+	} else {
+		$slider.remove();
+	}
+}
+
+function rubricSliderSwiper() {
+	var swiperContainer = '.js-rubric-slider';
+
+	var mySwiper = new Swiper(swiperContainer, {
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		autoplay: {
+			delay: 5000,
+		},
+		speed: 400,
+		loop: true,
+		init: false
+	});
+
+	mySwiper.on('init', function() {
+		$(swiperContainer).removeClass('swiper-is-loading');
+	});
+
+	mySwiper.init();
 }
 
 

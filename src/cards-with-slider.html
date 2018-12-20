@@ -1,0 +1,681 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+//= partials/head.html
+<body>
+	<script>
+		document.body.className += ' js';
+	</script>
+
+	<div class="page-wrap">
+
+		//= partials/header.html
+
+		<div class="layout-row">
+
+			<div class="l-layout">
+
+				//= partials/aside.html
+
+				<main class="l-main">
+
+					<div class="main-content">
+
+						<header class="b-content-title">
+						<picture>
+								<source srcset="userimg/title-7.webp" type="image/webp">
+								<img src="userimg/title-7.jpg" alt="">
+							</picture>
+							<div class="backnav">
+								<ul>
+									<li><a href="#">Главная</a></li>
+									<li><a href="#">Частным клиентам</a></li>
+									<li><a href="#">Банковские платежные карточки</a></li>
+								</ul>
+							</div>
+							<div class="maxwrap">
+								<div class="b-aside">
+									<div class="rubric-slider">
+										<div class="swiper-container js-rubric-slider swiper-is-loading">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="#" class="promo-img"><img src="userimg/promo-1.jpg" alt=""></a>
+												</div>
+												<div class="swiper-slide">
+													<div class="promo-img"><img src="userimg/promo-2.jpg" alt=""></div>
+												</div>
+												<div class="swiper-slide">
+													<a href="#" class="promo-img"><img src="userimg/promo-3.jpg" alt=""></a>
+												</div>
+											</div>
+
+											<div class="maxwrap swiper-pagination" id="swiper_sizer"></div>
+										</div>
+									</div>
+								</div>
+								<h1>Банковские платежные карточки</h1>
+								<div class="b-content-title-text">
+									<div class="flex-row b-advantages">
+										<div class="col-xs-12">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg><use xlink:href="i/common.svg#24hrs"></use></svg>
+												</i>
+												<span>Доступ к деньгам в течение 24 часов</span>
+											</span>
+										</div>
+
+										<div class="col-xs-12">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 480.4 560"><use xlink:href="i/common.svg#safety"></use></svg>
+												</i>
+												<span>Безопасный и компактный способ хранения</span>
+											</span>
+										</div>
+
+										<div class="col-xs-12">
+											<span class="ico-link">
+												<i class="c-ico ico-50">
+													<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#payments"></use></svg>
+												</i>
+												<span>Оплата услуг и товаров за рубежом</span>
+											</span>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</header>
+
+						<div class="maxwrap">
+							<section class="config" id="form-get-card">
+								<h2 class="align-center">Подобрать карточку</h2>
+
+								<form action="" class="config-ctrl" id="cards-filter-wrap">
+
+									<div class="flex-row flex-row-padding">
+										<div class="col-xs-12 col-sm-6">
+											<div class="config-title">Вид карточки</div>
+											<select data-select name="type">
+												<option value="">Вид карточки</option>
+													<option value="Виртуальные карточки">Виртуальные карточки</option>
+													<option value="Детские карточки">Детские карточки</option>
+													<option value="Зарплатные карточки">Зарплатные карточки</option>
+													<option value="Карточки моментального выпуска">Карточки моментального выпуска</option>
+													<option value="Классические карточки">Классические карточки</option>
+													<option value="Кредитные карточки">Кредитные карточки</option>
+													<option value="Премиальные карточки">Премиальные карточки</option>
+													<option value="Элитные карточки">Элитные карточки</option>
+											</select>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="config-title">Валюта</div>
+											<div class="b-toggler b-toggler-small">
+												<div class="toggler-action">
+													<input  id="currency-all" type="checkbox" name="currency" value="all" checked>
+													<label for="currency-all">Все</label>
+
+													<input  id="currency-byn" type="checkbox" name="currency" value="byn">
+													<label for="currency-byn">BYN</label>
+
+													<input  id="currency-usd" type="checkbox" name="currency" value="usd">
+													<label for="currency-usd">USD</label>
+
+													<input  id="currency-eur" type="checkbox" name="currency" value="eur">
+													<label for="currency-eur">EUR</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="config-title">Регион использования</div>
+											<div class="b-toggler">
+												<div class="toggler-action toggler-row-480">
+													<input  id="region-all" type="radio" name="region" value="all" checked>
+													<label for="region-all">Международная</label>
+
+													<input  id="region-byn" type="radio" name="region" value="byn">
+													<label for="region-byn">Национальная</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="config-title">Платежная система</div>
+											<div class="b-toggler b-toggler-small">
+												<div class="toggler-action">
+													<input  id="emit-all" type="radio" name="emit" value="all" checked>
+													<label for="emit-all">Все</label>
+
+													<input  id="emit-byn" type="radio" name="emit" value="visa">
+													<label for="emit-byn">VISA</label>
+
+													<input  id="emit-usd" type="radio" name="emit" value="mastercard">
+													<label for="emit-usd">MASTERCARD</label>
+
+													<input  id="emit-eur" type="radio" name="emit" value="belcard">
+													<label for="emit-eur">БЕЛКАРД</label>
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-lg-12 end-xs col-config-reset">
+											<input type="reset" id="cards-filter-reset" class="button button-dashed" value="Сбросить фильтр"/>
+										</div>
+									</div>
+
+								</form>
+							</section>
+
+							<section>
+
+								<div class="confg-result">
+
+									<div class="config-result-header">
+										<div class="flex-row flex-row-padding-x middle-xs">
+											<div class="col-xs-12 col-sm config-result-header-aside">
+												<a href="#" class="link-attention">
+													<i class="c-ico ico-25">!</i>
+													<span><span>Подробнее о банковских карточках</span></span>
+												</a>
+											</div>
+											<div class="col-xs-12 col-sm"><h3>Найдено карточек: 3</h3></div>
+										</div>
+									</div>
+
+									<div class="confg-result-list">
+
+										<div class="b-cards-list">
+
+											<div class="b-card box box-shadow usercontent">
+												<span class="b-card-labels"><span class="is-premium">Премиум</span></span>
+
+												<div class="b-card-title b-card-node b-card-descr">
+													<a href="#">Visa Gold (премиальная)</a>
+												</div>
+
+												<div class="b-card-node b-card-img">
+													<div class="b-card-shape-group">
+														<div class="card-shape b-card-shape">
+															<img src="userimg/card-10.jpg" alt="">
+														</div>
+														<div class="b-card-shape-thumbs">
+															<a href="#" class="active">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-10.jpg" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-2.png" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-1.png" alt="">
+																</picture>
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="b-card-details b-card-node b-card-descr">
+													<div class="b-card-flist">
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#currency"></use></svg>
+															</i>
+															<dl>
+																<dt>Валюта</dt>
+																<dd>BYN, EUR, RUB, USD</dd>
+															</dl>
+														</div>
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#clock"></use></svg>
+															</i>
+															<dl>
+																<dt>Срок</dt>
+																<dd>2 года, 3 года</dd>
+															</dl>
+														</div>
+													</div>
+													<ul>
+														<li>Visa Gold (премиальная)</li>
+														<li>оформляется без посещения офиса банка</li>
+														<li>можно оплачивать товары и услуги в сети Интернет, пользоваться всем функционалом Интернет-банка, а также снимать наличные денежные средства в сети банкоматов СБС с использованием услуги «Снятие наличных по коду».</li>
+													</ul>
+													<div class="btns">
+														<div class="btns__holder">
+															<div class="btns__col">
+																<a href="https://www.bankbveb.by/booking/index.jsp" class="button" target="_blank">Запись на обслуживание</a>
+															</div>
+															<div class="btns__col">
+																<a href="https://www.bankbveb.by/booking/index.jsp" class="button" target="_blank">Обратный звонок</a>
+															</div>
+															<div class="btns__col">
+																<a href="/individual/kartochki/card/belkart-standart-zaplatnaya/" class="button button-dashed">Подробнее</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="b-card box box-shadow usercontent">
+												<div class="b-card-title b-card-node b-card-descr">
+													<a href="#">БЕЛКАРТ-Стандарт</a>
+												</div>
+
+												<div class="b-card-node b-card-img">
+													<div class="b-card-shape-group">
+														<div class="card-shape b-card-shape">
+															<img src="userimg/card-1.png" alt="">
+														</div>
+														<div class="b-card-shape-thumbs">
+															<a href="#" class="active">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-1.png" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-2.png" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-10.jpg" alt="">
+																</picture>
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="b-card-details b-card-node b-card-descr">
+													<div class="b-card-flist">
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#currency"></use></svg>
+															</i>
+															<dl>
+																<dt>Валюта</dt>
+																<dd>BYN, EUR, RUB, USD</dd>
+															</dl>
+														</div>
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#clock"></use></svg>
+															</i>
+															<dl>
+																<dt>Срок</dt>
+																<dd>2 года, 3 года</dd>
+															</dl>
+														</div>
+													</div>
+													<ul>
+														<li>Visa Gold (премиальная)</li>
+														<li>оформляется без посещения офиса банка</li>
+														<li>можно оплачивать товары и услуги в сети Интернет, пользоваться всем функционалом Интернет-банка, а также снимать наличные денежные средства в сети банкоматов СБС с использованием услуги «Снятие наличных по коду».</li>
+													</ul>
+													<object>
+														<a href="#requestlink" class="button">Заказать карту</a>
+													</object>
+												</div>
+											</div>
+
+											<div class="b-card box box-shadow usercontent">
+												<span class="b-card-labels"><span class="is-premium">Премиум</span></span>
+
+												<div class="b-card-title b-card-node b-card-descr">
+													<a href="#">БЕЛКАРТ-Стандарт  «Детская»</a>
+												</div>
+
+												<div class="b-card-node b-card-img">
+													<div class="b-card-shape-group">
+														<div class="card-shape b-card-shape">
+															<img src="userimg/card-2.png" alt="">
+														</div>
+														<div class="b-card-shape-thumbs">
+															<a href="#" class="active">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-2.png" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-1.png" alt="">
+																</picture>
+															</a>
+															<a href="#">
+																<picture class="b-card-shape-thumb">
+																	<img src="userimg/card-10.jpg" alt="">
+																</picture>
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<div class="b-card-details b-card-node b-card-descr">
+													<div class="b-card-flist">
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#currency"></use></svg>
+															</i>
+															<dl>
+																<dt>Валюта</dt>
+																<dd>BYN, EUR, RUB, USD</dd>
+															</dl>
+														</div>
+														<div class="b-card-feature">
+															<i class="c-ico ico-40 ico--orange">
+																<svg viewBox="0 0 535.6 560"><use xlink:href="i/common.svg#clock"></use></svg>
+															</i>
+															<dl>
+																<dt>Срок</dt>
+																<dd>2 года, 3 года</dd>
+															</dl>
+														</div>
+													</div>
+													<ul>
+														<li>Visa Gold (премиальная)</li>
+														<li>оформляется без посещения офиса банка</li>
+														<li>можно оплачивать товары и услуги в сети Интернет, пользоваться всем функционалом Интернет-банка, а также снимать наличные денежные средства в сети банкоматов СБС с использованием услуги «Снятие наличных по коду».</li>
+													</ul>
+													<object>
+														<a href="#requestlink" class="button">Заказать карту</a>
+													</object>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</section>
+
+							<section class="usercontent">
+
+								<h2 class="align-center">Виды платежных карт</h2>
+
+								<div class="flex-row b-offer-list">
+									<div class="col-xs-12">
+										<a href="#" class="b-offer">
+											<picture>
+												<img src="https://picsum.photos/800/601" alt="">
+											</picture>
+											<div class="b-offer-gradient"></div>
+											<div class="b-offer-title">
+												Спраўная
+											</div>
+											<div class="b-offer-details">
+												<ul>
+													<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+													<li>Без поручителей</li>
+													<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+									<div class="col-xs-12">
+										<a href="#" class="b-offer">
+											<picture>
+												<img src="https://picsum.photos/800/601" alt="">
+											</picture>
+											<div class="b-offer-gradient"></div>
+											<div class="b-offer-title">
+												Спраўная
+											</div>
+											<div class="b-offer-details">
+												<ul>
+													<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+													<li>Без поручителей</li>
+													<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+									<div class="col-xs-12">
+										<a href="#" class="b-offer">
+											<picture>
+												<img src="https://picsum.photos/800/601" alt="">
+											</picture>
+											<div class="b-offer-gradient"></div>
+											<div class="b-offer-title">
+												Спраўная
+											</div>
+											<div class="b-offer-details">
+												<ul>
+													<li>Сумма кредита – до 17 000 руб. (для клиентов категории VIP – до 22 000 руб.)</li>
+													<li>Без поручителей</li>
+													<li>Срок кредитования – от 2 месяцев до 5 лет</li>
+												</ul>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<h2 class="align-center">Узнайте больше</h2>
+
+								<div class="l-faq l-faq-bar">
+									<div>
+										<a href="#" class="faq-q"><span>Снятие наличных по коду</span></a>
+										<div class="faq-a">
+											«Снятие наличных по коду» – это инновационная услуга Банка, которая позволяет нашим клиентам осуществлять снятие наличных денежных средств без использования карточки на физическом носителе.
+											<h4>«Снятие наличных по коду» это:</h4>
+											<ul>
+												<li>получение наличных денежных средств посредством банкоматов Банка и банков-партнеров (СБС) без использования карточки;</li>
+												<li>возможность получения наличных денежных средств в случае отсутствия платежной карточки;</li>
+											</ul>
+											<p>Валюта получения денежных средств – белорусские рубли;</p>
+											<p>Максимальная однократная сумма услуги – <code>800</code> белорусских рублей;</p>
+											<p>Общая максимальная сумма Услуг в течение 24 часов – <code>2200</code> белорусских рублей;</p>
+											<p>Минимальная сумма услуги – 5 белорусских рублей;</p>
+											<p>Сумма услуги кратна 5 белорусским рублям.</p>
+											<p>Комиссия за оказание услуги не взимается.</p>
+											<h4>Как воспользоваться?</h4>
+											<p>С использованием услуги «Интернет-Банк» сформировать код получения услуги (уникальный 10-значный код, необходимый для получения наличных денежных средств в банкомате Банка либо банка-партнера (СБС). Первая часть кода получения Услуги (5 цифр) отображается на экране услуги «Интернет-Банк», вторая часть (5 цифр) направляется СМС-сообщением на номер мобильного телефона клиента.</p>
+											<p>Для осуществления операции снятия наличных по коду клиенту необходимо ввести в банкомате Банка обе части кода получения услуги, а также указать запрошенную сумму денежных средств.</p>
+											<p>Оказание услуги «Снятие наличных по коду физическим лицам» осуществляется в соответствии с Правилами оказания услуги «Снятие наличных по коду» физическим лицам.</p>
+											<p>Инструкция по снятию наличных по коду в <a href="#" class="button button-small">Интернет-Банке</a></p>
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Операции в Интернет (3D-Secure)</span></a>
+										<div class="faq-a">
+											<p>Технология 3D-Secure — современный стандарт обеспечения безопасности при совершении операции оплаты товаров и услуг в сети Интернет. Высокий уровень защиты достигается благодаря проверке банком подлинности карточки и личности ее владельца в режиме реального времени.</p>
+											<p>При совершении платежа с использованием технологии 3D-Secure после ввода данных карты на сайте интернет-магазина держатель карточки перенаправляется на специальную безопасную страницу банка для дополнительного подтверждения платежа посредством ввода одноразового кода подтверждения операции (КПО). SMS-сообщение, содержащее КПО, формируется для каждой операции и отправляется на зарегистрированный для данной карточки номер мобильного телефона.</p>
+											<p>Для совершения платежа полученный КПО необходимо ввести в соответствующие поле с учетом регистра.</p>
+											<p>Номер зарегистрированного мобильного телефона, несколько цифр которого замаскированы символом *, отражается в поле «Персональное приветствие». Если данное поле пустое или содержит только символы *, для данной карточки не зарегистрирован ни один телефон. Для совершения платежа необходимо произвести регистрацию телефона.</p>
+											<p>Регистрация и изменение номера телефона осуществляется держателем карточки самостоятельно в устройствах системы банковского самообслуживания (СБС) — банкоматы, платежно-справочные терминалы самообслуживания, платежные терминалы самообслуживания, а также посредством услуги «Интернет-Банк». Для регистрации номера телефона в устройствах СБС необходимо последовательно выбрать пункт меню «Другие услуги», затем пункт меню «3D-Secure» и ввести номер мобильного телефона (белорусского либо иностранного оператора электросвязи) в международном формате. В услуге «Интернет-Банк» регистрация номера телефона осуществляется в пункте меню «3D-Secure» раздела «Услуги, сервисы».</p>
+											<p>Оплатить товары и услуги в сети Интернет с использованием технологии 3D-Secure можно с использованием банковских платежных карточек ОАО "Банк БелВЭБ" международных платежных систем MasterCard (программа SecureCode, сайты обозначены торговым знаком  ) и Visa (программа Verified by Visa, сайты обозначены торговым знаком  ). Обращаем внимание, что для совершения платежей в сети Интернет может понадобиться трехзначное значение CVC/CVV 2, указанное на обратной стороне карточки. В случае если его на карточке нет, необходимо обратиться по месту ведения счета для переизготовления карточки.</p>
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Кредитные карточки</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Детские карточки</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Виртуальные карточки</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Безопасность</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Лимиты совершения операций</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+								</div>
+
+								<div class="box-letter">
+									<h2 class="align-center">Платежные карты «Банк БелВЭБ» </h2>
+
+									<div class="b-story-reverse">
+										<div class="flex-row story-row">
+											<div class="col-xs story-aside">
+												<i class="c-ico ico-100 ico--orange">
+													<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#cards"></use></svg>
+												</i>
+											</div>
+											<div class="col-xs">
+												<p>«Международные карточки Maestro, Visa Electron и БЕЛКАРТ-Maestro принимаются к оплате в электронных платежных устройствах — в платежных терминалах в организациях торговли (сервиса) либо в банкоматах и платежно-справочных терминалах самообслуживания по всему миру.</p>
+											</div>
+										</div>
+
+										<div class="flex-row story-row">
+											<div class="col-xs story-aside">
+												<i class="c-ico ico-100 ico--orange">
+													<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#3d-secure"></use></svg>
+												</i>
+											</div>
+											<div class="col-xs">
+												<p>Операции в сети Интернет с использованием карточек Maestro, MasterCard  и БЕЛКАРТ-Maestro осуществляются с применением технологии 3D-Secure, значительно повышающей безопасность совершения операций. Более подробно о технологии 3D-Secure можно узнать в разделе«Операции в Интернет (3D-Secure)».</p>
+											</div>
+										</div>
+
+										<div class="flex-row story-row">
+											<div class="col-xs story-aside">
+												<i class="c-ico ico-100 ico--orange">
+													<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#internet-payments"></use></svg>
+												</i>
+											</div>
+											<div class="col-xs">
+												<p>Карточки  Maestro, Visa Electron БЕЛКАРТ-Maestro доступны для осуществления платежей в сети Интернет.</p>
+											</div>
+										</div>
+
+										<div class="flex-row story-row">
+											<div class="col-xs story-aside">
+												<i class="c-ico ico-100 ico--orange">
+													<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#popular"></use></svg>
+												</i>
+											</div>
+											<div class="col-xs">
+												<p>Международные карточки MasterCard Standard и Visa Classic являются самыми популярными в мире платежными картами. Карты позволяют не только оплачивать товары и услуги или получать наличные средства в банках и банкоматах любой страны мира, с помощью этих карт можно бронировать гостиницу или брать на прокат автомобиль, а также осуществлять платежи в Интернет.</p>
+											</div>
+										</div>
+
+										<div class="flex-row story-row">
+											<div class="col-xs story-aside">
+												<i class="c-ico ico-100 ico--orange">
+													<svg viewBox="0 0 360 360"><use xlink:href="i/common.svg#status"></use></svg>
+												</i>
+											</div>
+											<div class="col-xs">
+												<p>Международные карточки VisaGold и VisaPlatinum призваны подчеркнуть высокий социальный и финансовый статус клиента, его значимость для банка и предоставляющие держателю обширные привилегии во время путешествий, развлечений и в повседневной жизни. Более подробно о дополнительных возможностях данных карточек можно узнать в разделе«Международные дебетовые карточки премиум-класса VisaGold и VisaPlatinum».</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card-promo box-shadow">
+									<div class="bg-video">
+										<video width="622" height="350" style="width:100%;height:100%" class="media-player" poster="//ak3.picdn.net/shutterstock/videos/9913883/thumb/2.jpg" autoplay="" loop="" src="//ak3.picdn.net/shutterstock/videos/9913883/preview/stock-footage-credit-card-swipe-through-pin-terminal-extreme-closeup-shallow-depth-of-field.mp4">
+											<source type="video/mp4" src="//ak3.picdn.net/shutterstock/videos/9913883/preview/stock-footage-credit-card-swipe-through-pin-terminal-extreme-closeup-shallow-depth-of-field.mp4">
+											<source type="video/webm" src="//ak3.picdn.net/shutterstock/videos/9913883/preview/stock-footage-credit-card-swipe-through-pin-terminal-extreme-closeup-shallow-depth-of-field.webm">
+											<object width="596" height="336" type="application/x-shockwave-flash" data="/video/assets/static/flashmediaelement.swf">
+												<param name="movie" value="/video/assets/static/flashmediaelement.swf">
+												<param name="flashvars" value="controls=true&amp;file=%2F%2Fak3.picdn.net%2Fshutterstock%2Fvideos%2F9913883%2Fpreview%2Fstock-footage-credit-card-swipe-through-pin-terminal-extreme-closeup-shallow-depth-of-field.mp4">
+											</object>
+										</video>
+									</div>
+									<div class="card-promo-in">
+										<!-- <h2 class="align-center">Заказать карту</h2> -->
+										<div class="flex-row flex-row-padding">
+											<div class="col-xs-12 col-sm-6 center-xs">
+												<picture>
+													<!--<source srcset="userimg/card-1.webp" type="image/webp">-->
+													<img src="userimg/card-1.png" alt="">
+												</picture>
+											</div>
+											<div class="col-xs-12 col-sm-6">
+												<div class="flex-row flex-col">
+													<div class="col-xs">
+														<p>При оформлении заявки вы всегда можете связаться с консультантом по бесплатному номеру <a href="tel:+375291585865"><b>+375 29 158-58-65</b></a></p>
+													</div>
+													<div class="col-xs">
+														<p><a href="#" class="button">Заказать карту</a></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<h2 class="align-center">Дополнительная информация</h2>
+
+								<div class="l-faq l-faq-bar">
+									<div>
+										<a href="#" class="faq-q"><span>Оформление карточек</span></a>
+										<div class="faq-a">
+											<h4>Для оформления карточки необходимо:</h4>
+											<ol>
+												<li>Привлечение денежных средств физических и юридических лиц на счета и во вклады (депозиты)</li>
+												<li>Размещение привлеченных денежных средств физических и юридических лиц на счета </li>
+												<li>Открытие и ведение банковских счетов физических и юридических лиц</li>
+												<li>Открытие и ведение счетов в драгоценных металлах</li>
+												<li>Осуществление расчетного и кассового обслуживания физических</li>
+											</ol>
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Операции в Интернет (3D-Secure)</span></a>
+										<div class="faq-a">
+											<p>Технология 3D-Secure — современный стандарт обеспечения безопасности при совершении операции оплаты товаров и услуг в сети Интернет. Высокий уровень защиты достигается благодаря проверке банком подлинности карточки и личности ее владельца в режиме реального времени.</p>
+											<p>При совершении платежа с использованием технологии 3D-Secure после ввода данных карты на сайте интернет-магазина держатель карточки перенаправляется на специальную безопасную страницу банка для дополнительного подтверждения платежа посредством ввода одноразового кода подтверждения операции (КПО). SMS-сообщение, содержащее КПО, формируется для каждой операции и отправляется на зарегистрированный для данной карточки номер мобильного телефона.</p>
+											<p>Для совершения платежа полученный КПО необходимо ввести в соответствующие поле с учетом регистра.</p>
+											<p>Номер зарегистрированного мобильного телефона, несколько цифр которого замаскированы символом *, отражается в поле «Персональное приветствие». Если данное поле пустое или содержит только символы *, для данной карточки не зарегистрирован ни один телефон. Для совершения платежа необходимо произвести регистрацию телефона.</p>
+											<p>Регистрация и изменение номера телефона осуществляется держателем карточки самостоятельно в устройствах системы банковского самообслуживания (СБС) — банкоматы, платежно-справочные терминалы самообслуживания, платежные терминалы самообслуживания, а также посредством услуги «Интернет-Банк». Для регистрации номера телефона в устройствах СБС необходимо последовательно выбрать пункт меню «Другие услуги», затем пункт меню «3D-Secure» и ввести номер мобильного телефона (белорусского либо иностранного оператора электросвязи) в международном формате. В услуге «Интернет-Банк» регистрация номера телефона осуществляется в пункте меню «3D-Secure» раздела «Услуги, сервисы».</p>
+											<p>Оплатить товары и услуги в сети Интернет с использованием технологии 3D-Secure можно с использованием банковских платежных карточек ОАО "Банк БелВЭБ" международных платежных систем MasterCard (программа SecureCode, сайты обозначены торговым знаком  ) и Visa (программа Verified by Visa, сайты обозначены торговым знаком  ). Обращаем внимание, что для совершения платежей в сети Интернет может понадобиться трехзначное значение CVC/CVV 2, указанное на обратной стороне карточки. В случае если его на карточке нет, необходимо обратиться по месту ведения счета для переизготовления карточки.</p>
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Кредитные карточки</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+									<div>
+										<a href="#" class="faq-q"><span>Детские карточки</span></a>
+										<div class="faq-a">
+											<p>Банковские карточки «БелВЭБ» являются современным  средством для осуществления расчетов. При этом они отвечают всем  требованиям безопасности и имеют лаконичный строгий дизайн.
+										</div>
+									</div>
+								</div>
+
+							</section>
+
+						</div>
+
+					</div>
+
+					//= partials/footer.html
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	//= partials/scripts.html
+</body>
+</html>
+
