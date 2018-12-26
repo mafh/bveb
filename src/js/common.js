@@ -1996,4 +1996,8 @@ function cardsSlider() {
 
 $(document).ready(function () {
 	cardsSlider();
+
+	$('#phone').mask('(99999)000-00-00', {
+		placeholder: "(XXX)XXX-XX-XX"
+	});
 });

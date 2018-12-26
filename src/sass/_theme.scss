@@ -379,4 +379,14 @@ a.card .labels span.is-new {
 	}
 }
 
+.link--white {
+	&:hover {
+		color: $base-color-active;
+	}
+}
+
+input[type="radio"] + span:before {
+	background-color: $base-color-active;
+}
+
 //}
