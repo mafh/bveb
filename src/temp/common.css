@@ -3126,8 +3126,7 @@ a.card {
 	.choices * {
 		box-sizing: border-box; }
 	.choices .choices__inner {
-		min-height: 50px;
-		text-transform: lowercase; }
+		min-height: 50px; }
 	.choices.is-open {
 		z-index: 40;
 		position: relative; }
