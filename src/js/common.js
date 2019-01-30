@@ -1997,7 +1997,20 @@ function cardsSlider() {
 $(document).ready(function () {
 	cardsSlider();
 
-	$('#phone').mask('(99999)000-00-00', {
-		placeholder: "(XXX)XXX-XX-XX"
+	// $('#phone').mask('(999)000-00-00', {
+	// 	placeholder: "(XXX)XXX-XX-XX"
+	// });
+
+	$('#masked-phone').inputmask({
+		"mask": "+375 99 999-99-99"
+		, clearMaskOnLostFocus: false
 	});
+
+	$('.validate-phones-js').on('submit', function () {
+		var cur = $(this);
+		if (cur.find('.validate-phone-js').val().length < 17 && cur.find('.validate-tel-js').val().length < 5) {
+			alert('Введите мобильный или городской номер телефона');
+			return false;
+		}
+	})
 });

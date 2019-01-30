@@ -181,6 +181,11 @@ h1, h2, h3, h4, h5 {
 		> [class^="col-"] {
 			padding: 1rem;
 		}
+
+		.flex-row {
+			margin-left:  -1rem;
+			margin-right: -1rem;
+		}
 	}
 
 	&.flex-row-padding {
@@ -226,6 +231,10 @@ h1, h2, h3, h4, h5 {
 
 .input {
 	position: relative;
+
+	& + .input {
+		margin-top: 10px;
+	}
 
 	label {
 		display: block;
@@ -2295,7 +2304,8 @@ a.card:hover {
 
 .card-shape {
 	display: inline-block;
-	border-radius: 0.6vw;
+	//border-radius: 0.6vw;
+	border-radius: 13px;
 	overflow: hidden;
 }
 
@@ -2307,7 +2317,8 @@ a.card:hover {
 
 .card-face {
 	display: inline-block;
-	border-radius: 1vw;
+	//border-radius: 1vw;
+	border-radius: 15px;
 	overflow: hidden;
 	box-shadow:
 		-0.5vw 0.5vw 1vw rgba(#003f5d,0.5),
@@ -2384,7 +2395,8 @@ a.card:hover {
 
 .b-aside-card {
 	margin-bottom: 20px;
-	border-radius: 1vw;
+	//border-radius: 1vw;
+	border-radius: 15px;
 	width: 360px;
 	max-width: 100%;
 	box-shadow:
@@ -2393,7 +2405,8 @@ a.card:hover {
 }
 
 .b-aside-card-thumb, .b-card-shape-thumb {
-	border-radius: 0.2vw;
+	//border-radius: 0.2vw;
+	border-radius: 4px;
 	$width: 70px;
 	width: $width;
 	max-width: 100%;
@@ -2424,7 +2437,8 @@ a.card:hover {
 	float: left;
 	margin: 0 0 10px 6px;
 	padding: 3px;
-	border-radius: 0.3vw;
+	//border-radius: 0.3vw;
+	border-radius: 5px;
 	cursor: pointer;
 	max-width: calc(33.33% - 6px);
 	//background-color: #006e93;
@@ -3549,10 +3563,14 @@ a.faq-q.active:after {
 .faq-a {
 	display: none;
 
-	font-size: 16px;
 	padding: 0 2rem 2rem;
+	font-size: 16px;
 	line-height: 1.6em;
 	color: #666;
+
+	ul {
+		font-size: inherit;
+	}
 }
 
 .l-faq--expand .faq-a {
@@ -7632,5 +7650,20 @@ span.flatpickr-weekday {
 
 	.button {
 		padding: 0 1rem;
+	}
+}
+
+.successForm {
+	border: 2px solid #229422;
+	color: #229422;
+	padding: 5px 15px;
+	margin: 2rem 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 }

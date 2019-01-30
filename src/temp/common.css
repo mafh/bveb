@@ -829,6 +829,9 @@ h1, h2, h3, h4, h5 {
 	margin-right: -2rem; }
 	.flex-row.form-row > [class^="col-"] {
 		padding: 1rem; }
+	.flex-row.form-row .flex-row {
+		margin-left: -1rem;
+		margin-right: -1rem; }
 
 .flex-row.flex-row-padding {
 	margin-left: -20px;
@@ -860,6 +863,8 @@ h1, h2, h3, h4, h5 {
 
 .input {
 	position: relative; }
+	.input + .input {
+		margin-top: 10px; }
 	.input label {
 		display: block;
 		font-size: 18px;
@@ -2413,7 +2418,7 @@ a.card:hover .readmore svg {
 
 .card-shape {
 	display: inline-block;
-	border-radius: 0.6vw;
+	border-radius: 13px;
 	overflow: hidden; }
 
 .card-shadow {
@@ -2421,7 +2426,7 @@ a.card:hover .readmore svg {
 
 .card-face {
 	display: inline-block;
-	border-radius: 1vw;
+	border-radius: 15px;
 	overflow: hidden;
 	box-shadow: -0.5vw 0.5vw 1vw rgba(0, 63, 93, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5); }
 
@@ -2466,13 +2471,13 @@ a.card:hover .readmore svg {
 
 .b-aside-card {
 	margin-bottom: 20px;
-	border-radius: 1vw;
+	border-radius: 15px;
 	width: 360px;
 	max-width: 100%;
 	box-shadow: -0.5vw 0.5vw 1vw rgba(0, 63, 93, 0.5), 0 2px 2px rgba(0, 0, 0, 0.5); }
 
 .b-aside-card-thumb, .b-card-shape-thumb {
-	border-radius: 0.2vw;
+	border-radius: 4px;
 	width: 70px;
 	max-width: 100%; }
 	.b-aside-card-thumb::after, .b-card-shape-thumb::after {
@@ -2494,7 +2499,7 @@ a.card:hover .readmore svg {
 	float: left;
 	margin: 0 0 10px 6px;
 	padding: 3px;
-	border-radius: 0.3vw;
+	border-radius: 5px;
 	cursor: pointer;
 	max-width: calc(33.33% - 6px);
 	-webkit-transition: background-color 0.2s;
@@ -3256,10 +3261,12 @@ a.faq-q.active:after {
 
 .faq-a {
 	display: none;
-	font-size: 16px;
 	padding: 0 2rem 2rem;
+	font-size: 16px;
 	line-height: 1.6em;
 	color: #666; }
+	.faq-a ul {
+		font-size: inherit; }
 
 .l-faq--expand .faq-a {
 	display: block !important; }
@@ -5946,6 +5953,16 @@ span.flatpickr-weekday {
 	flex-shrink: 1; }
 	.btns__col .button {
 		padding: 0 1rem; }
+
+.successForm {
+	border: 2px solid #229422;
+	color: #229422;
+	padding: 5px 15px;
+	margin: 2rem 0; }
+	.successForm:first-child {
+		margin-top: 0; }
+	.successForm:last-child {
+		margin-bottom: 0; }
 
 body.popup-is-visible {
 	overflow: hidden; }
