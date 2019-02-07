@@ -5964,6 +5964,9 @@ span.flatpickr-weekday {
 	.successForm:last-child {
 		margin-bottom: 0; }
 
+form[name="SIMPLE_FORM_11"] {
+	align-items: flex-end; }
+
 body.popup-is-visible {
 	overflow: hidden; }
 
